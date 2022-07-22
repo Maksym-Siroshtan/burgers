@@ -344,29 +344,29 @@ template {
 
 @font-face {
   font-family: "Gagalin-Regular";
-  src: url("/css/fonts/Gagalin/Gagalin-Regular.woff2") format("woff2");
+  src: url("/burgers/css/fonts/Gagalin/Gagalin-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Lifehack-Medium";
-  src: url("/css/fonts/Lifehack Medium.woff2") format("woff2");
+  src: url("/burgers/css/fonts/Lifehack Medium.woff2") format("woff2");
 }
 @font-face {
   font-family: "Ubuntu";
-  src: url("/css/fonts/Ubuntu/Ubuntu-Light.woff") format("woff");
+  src: url("/burgers/css/fonts/Ubuntu/Ubuntu-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Ubuntu";
-  src: url("/css/fonts/Ubuntu/Ubuntu-Medium.woff") format("woff");
+  src: url("/burgers/css/fonts/Ubuntu/Ubuntu-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Ubuntu";
-  src: url("/css/fonts/Ubuntu/Ubuntu-B.woff") format("woff");
+  src: url("/burgers/css/fonts/Ubuntu/Ubuntu-B.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
