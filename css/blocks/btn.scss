@@ -1,0 +1,23 @@
+.btn {
+    font-size: 13px;
+    padding: 8px 16px;
+    background: $orange;
+    color: #fff;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.btn--bg-black {
+    background: $black;
+}
+
+.btn--form {
+    margin-right: 15px;
+}
+
+.btn-clear {
+    color : #f5f2ed;
+    font-size: 14px;
+    font-weight: 300;
+    background: none;
+}

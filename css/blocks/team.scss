@@ -1,0 +1,100 @@
+.team {
+    background: url('/burgers/img/bg/bg_team.jpg') center center / cover no-repeat;
+    position: relative;
+}
+
+.team-block__right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    opacity: 0.92;
+    background-color: #2f3234;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team__desc {
+    width: 50%;
+}
+
+.team__title {
+    margin-bottom: 46px;
+}
+
+.team__item-info {
+    display: none;
+}
+
+.team__item {
+    margin-bottom: 35px;
+    position: relative;
+    transition: 1.5s;
+    font-family: Ubuntu-Regular;
+    color: #fff;
+    font-size: 14.1px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &::after {
+        content: "";
+        border: 5px solid transparent;
+        border-top-color: #f9b43b;
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: -20px;
+        top: 7px;
+    }
+
+    &--active {
+
+        .team__item-name {
+            color: #f9b43b;
+        }
+
+        .team__item-info {
+            display: inline-flex;
+        }
+
+        &::after {
+            content: "";
+            border: 5px solid transparent;
+            border-bottom-color: #f9b43b;
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 20px;
+            top: 2px;
+        }
+
+    }
+}
+
+.team__item-name {
+    font-family: Gagalin-Regular;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+
+.team__item-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.team__item-img {
+    margin-right: 21px;
+}
+
+.team__item-profession {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.team__item-text p {
+    font-weight: 300;
+}

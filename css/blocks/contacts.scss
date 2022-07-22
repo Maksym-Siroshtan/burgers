@@ -1,0 +1,24 @@
+.contacts p {
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.contacts__icon, .contacts__phone {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contacts__icon {
+    margin-right: 5px;
+}
+
+.contacts__icon-block {
+    width: 11px;
+    height: 11px;
+}
+
+.contacts__phone {
+    font-weight: 700;
+    color: #e45028;
+    text-decoration: none;
+}

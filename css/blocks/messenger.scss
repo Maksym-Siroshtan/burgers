@@ -1,0 +1,28 @@
+.messenger {
+    display: flex;
+}
+
+.messenger__item {
+    margin-right: 20px;
+    transition: .3s;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.messenger__link {
+    display: inline-block;
+    
+    :hover {
+        opacity: 1;
+        background: #000;
+    }
+}
+
+.messenger__icon {
+    border-radius: 2px;
+    opacity: 0.3;
+    width: 20px;
+    height: 20px;
+}

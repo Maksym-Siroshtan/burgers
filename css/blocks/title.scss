@@ -1,0 +1,27 @@
+.title {
+    font-size: 72px;
+    font-weight: 400;
+    color: $yellow;
+    font-family: Gagalin-Regular;
+    line-height: 1;
+
+    &--color {
+
+        &-black {
+            color: $black;
+        }
+    
+        &-white {
+            color: #fff;
+        }
+    }
+
+}
+
+.subtitle {
+    font-family: Lifehack-Medium;
+    font-size: 65px;
+    color: #ffffff;
+    line-height: 1;
+    letter-spacing: -0.025em;
+}

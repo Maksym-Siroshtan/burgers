@@ -1,0 +1,55 @@
+.menu {
+    background: url('/burgers/img/bg/bg_menu.jpg') center center / cover no-repeat;
+    color: #fff;
+    position: relative;
+}
+
+.menu__title {
+    position: absolute;
+    top: 111px;
+    left: 94px;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__item {
+    display: flex;
+    z-index: $z-acco;
+}
+
+.menu__link {
+    writing-mode: vertical-lr;
+    color: inherit;
+    height: 100%;
+    text-decoration: none;
+    background: url('/burgers/img/bg/bg_menu_1.png') center center / cover no-repeat;
+
+    &--vegan {
+        background: url('/burgers/img/bg/bg_menu_2.png') center center / cover no-repeat;
+    }
+
+    &--diets {
+        background: url('/burgers/img/bg/bg_menu_3.png') center center / cover no-repeat;
+    }
+}
+
+.menu__text {
+    transform: rotate(180deg);
+    font-family: Gagalin-Regular;
+    font-size: 40px;
+    line-height: 64px;
+    font-weight: 400;
+    padding: 40px 8px 0;
+}
+
+.menu__content {
+    width: 0;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+    overflow: hidden;
+    background-color: rgba(20,20,20,0.7);
+}

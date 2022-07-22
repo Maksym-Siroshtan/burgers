@@ -1,0 +1,23 @@
+.we-make-burgers {
+    background: url('/burgers/img/bg/bg_we_make_burgers.jpg') center center / cover no-repeat;
+    position: relative;
+}
+
+.we-make-burgers__container {
+    height: 100%;
+}
+
+.we-make-burgers__content {
+    display: flex;
+    align-items: center;
+    flex: .7;
+}
+
+.we-make-burgers__desc {
+    padding-top: 67px;
+    padding-left: 16px;
+}
+
+.we-make-burgers__title {
+    margin-bottom: 30px;
+}
