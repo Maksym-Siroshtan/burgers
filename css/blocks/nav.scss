@@ -1,6 +1,14 @@
 .nav {
     flex: 1;
-    margin-right: 10px;
+    margin-right: rem(10px);
+
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
 }
 
 .nav__list {
@@ -11,7 +19,7 @@
 
 .nav__item {
     position: relative;
-    margin-right: 36px;
+    margin-right: rem(30px);
     color: #fff;
 
     &::before {
@@ -21,8 +29,8 @@
         height: 4px;
         border-radius: 50%;
         background: #fff;
-        left: -20px;
-        top: 10px;    
+        left: rem(-20px);
+        top: rem(10px);    
     }
 
     &:first-child::before {
@@ -36,12 +44,8 @@
 
 .nav__link  {
     color: #fff;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-
 }
-
-
-

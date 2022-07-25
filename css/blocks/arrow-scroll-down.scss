@@ -1,7 +1,7 @@
 .arrow-scroll-down {
     position: absolute;
-    bottom: 35px;
-    right: 50%;
+    bottom: rem(35px);
+    right: 48%;
 }
 
 .arrow-scroll-down__btn {
@@ -10,6 +10,6 @@
 }
 
 .arrow-scroll-down__icon {
-    width: 29px;
-    height: 14px;
+    width: rem(29px);
+    height: rem(14px);
 }

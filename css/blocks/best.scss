@@ -5,39 +5,56 @@
 .best__list {
     display: flex;
     align-items: flex-start ;
+
+    @include phones {
+        flex-direction: column;
+        padding: 0 rem(30px);
+    }
 }
 
 .best__item {
     text-align: center;
     flex: 1;
+
+    @include phones {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        margin-bottom: rem(15px);
+    }
 }
 
 .best__title {
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
     text-align: center;
 }
 
 .best__item-img {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
+
+    @include phones {
+    margin-bottom: 0;
+    margin-right: rem(30px);
+    }
 }
 
 .best__item-img-symbol {
-    width: 96px;
-    height: 90px;
+    width: rem(96px);
+    height: rem(90px);
 }
 
 .best__desc {
-    font-family: Lifehack-Medium;
-    font-size: 24.2px;
+    @include lifehack;
+    font-size: rem(24.2px);
     font-weight: 500;
-    line-height: 28px;
+    line-height: rem(28px);
     color: $black;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 
 .best__text {
     opacity: 0.8;
-    font-size: 14.1px;
+    font-size: rem(14.1px);
     font-weight: 300;
     color: $black;
 }

@@ -11,9 +11,10 @@ $z-acco: 10;
 @import "_misc/normalize.scss";
 
 //media
-//@import "_misc/media.scss";
+@import "_misc/media.scss";
 
 //setups
+@import "_misc/mixins.scss";
 @import "_misc/fonts.scss";
 @import "_misc/layout.scss";
 
