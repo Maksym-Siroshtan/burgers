@@ -736,7 +736,6 @@ header {
 
 .best {
   background: url("/burgers/img/bg/bg_best.jpg") center center/cover no-repeat;
-  overflow: hidden;
 }
 
 .best__list {
@@ -1172,7 +1171,7 @@ header {
 }
 
 .menu {
-  background: url("/img/bg/bg_menu.jpg") center center/cover no-repeat;
+  background: url("/burgers/img/bg/bg_menu.jpg") center center/cover no-repeat;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -1229,13 +1228,13 @@ header {
   color: inherit;
   height: 100%;
   text-decoration: none;
-  background: url("/img/bg/bg_menu_1.png") center center/cover no-repeat;
+  background: url("/burgers/img/bg/bg_menu_1.png") center center/cover no-repeat;
 }
 .menu__link--vegan {
-  background: url("/img/bg/bg_menu_2.png") center center/cover no-repeat;
+  background: url("/burgers/img/bg/bg_menu_2.png") center center/cover no-repeat;
 }
 .menu__link--diets {
-  background: url("/img/bg/bg_menu_3.png") center center/cover no-repeat;
+  background: url("/burgers/img/bg/bg_menu_3.png") center center/cover no-repeat;
 }
 
 .menu__link-subtitle {
