@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>burgers</title>
 
     <link rel="stylesheet" href="/burgers/css/main.css">
@@ -24,27 +24,31 @@
                                 </svg>
                             </a>
                         </div>
-                        <nav class="nav">
-                            <ul class="nav__list">
-                                <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-                                <li class="nav__item"><a href="#" class="nav__link">Бургеры</a></li>
-                                <li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
-                                <li class="nav__item"><a href="#" class="nav__link">Меню</a></li>
-                                <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
-                                <li class="nav__item"><a href="#" class="nav__link">Как мы работаем</a></li>
-                                <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-                            </ul>
-                        </nav>
-                        <button type="button" class="btn">Заказать</button>
-                    </header>
-                    <div class="burger-menu">
-                        <div class="burger-menu__item">
-                            <a href="#" class="burger-menu__link"></a>
+                        <div class="header__btn">
+                            <nav class="nav">
+                                <ul class="nav__list">
+                                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link">Бургеры</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link">Меню</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link">Как мы работаем</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header__links">
+                                <button type="button" class="btn">Заказать</button>
+                                <a href="#" class="burger-menu-link">
+                                    <div class="burger-menu-link__design"></div>
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    </header>
+
                     <div class="we-make-burgers__content">
-                        <div class="we-make-burgers__block-image">
-                            <img src="./img/icons/burger-top.png" alt="Мы делаем натуральные бургеры">
+                        <div class="we-make-burgers__image">
+                            <img class="we-make-burgers__image-pic" src="./img/icons/burger-top.png"
+                                alt="Мы делаем натуральные бургеры">
                         </div>
                         <div class="we-make-burgers__desc">
                             <div class="we-make-burgers__title">
@@ -57,10 +61,10 @@
                 <div class="arrow-scroll-down">
                     <button type="button" class="arrow-scroll-down__btn">
                         <svg class="arrow-scroll-down__icon">
-                            <use xlink:href="./sprite.svg#arrow-scroll"></use>                            
+                            <use xlink:href="./sprite.svg#arrow-scroll"></use>
                         </svg>
                     </button>
-                </div>   
+                </div>
             </section>
 
             <section class="section best">
@@ -76,12 +80,15 @@
                                     </use>
                                 </svg>
                             </div>
-                            <div class="best__desc">100% свежее мясо</div>
-                            <div class="best__text">
-                                <p>
-                                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб
-                                    неравномерен.
-                                </p>
+                            <div class="best__info">
+                                <div class="best__desc">100% свежее мясо</div>
+                                <div class="best__text">
+                                    <p>
+                                        Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+                                        Ямб
+                                        неравномерен.
+                                    </p>
+                                </div>
                             </div>
                         </li>
                         <li class="best__item">
@@ -91,13 +98,15 @@
                                     </use>
                                 </svg>
                             </div>
-                            <div class="best__desc">Ручная сборка</div>
-                            <div class="best__text">
-                                <p>
-                                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
-                                    Первое
-                                    полустишие притягивает сюжетный реформаторский пафос.
-                                </p>
+                            <div class="best__info">
+                                <div class="best__desc">Ручная сборка</div>
+                                <div class="best__text">
+                                    <p>
+                                        Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+                                        Первое
+                                        полустишие притягивает сюжетный реформаторский пафос.
+                                    </p>
+                                </div>
                             </div>
                         </li>
                         <li class="best__item">
@@ -107,12 +116,14 @@
                                     </use>
                                 </svg>
                             </div>
-                            <div class="best__desc">Натуральные
-                                ингредиенты</div>
-                            <div class="best__text">
-                                <p>
-                                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
-                                </p>
+                            <div class="best__info">
+                                <div class="best__desc">Натуральные
+                                    ингредиенты</div>
+                                <div class="best__text">
+                                    <p>
+                                        Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+                                    </p>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -127,8 +138,11 @@
                         </div>
                         <ul class="team__list">
                             <li class="team__item">
-                                <div class="team__item-name">
-                                    <a href="#" class="team__item-link">Дэниэл Редклиф</a>
+                                <div class="team__item-desc">
+                                    <a href="#" class="team__item-link">
+                                        <div class="team__item-decor"></div>
+                                        <div class="team__item-name">Дэниэл Редклиф</div>
+                                    </a>
                                 </div>
                                 <div class="team__item-info">
                                     <div class="team__item-img">
@@ -146,8 +160,11 @@
                                 </div>
                             </li>
                             <li class="team__item team__item--active">
-                                <div class="team__item-name">
-                                    <a href="#" class="team__item-link">Ричард Джеймс</a>
+                                <div class="team__item-desc">
+                                    <a href="#" class="team__item-link">
+                                        <div class="team__item-decor"></div>
+                                        <div class="team__item-name">Ричард Джеймс</div>
+                                    </a>
                                 </div>
                                 <div class="team__item-info">
                                     <div class="team__item-img">
@@ -165,8 +182,11 @@
                                 </div>
                             </li>
                             <li class="team__item">
-                                <div class="team__item-name">
-                                    <a href="#" class="team__item-link">Джейк Финн</a>
+                                <div class="team__item-desc">
+                                    <a href="#" class="team__item-link">
+                                        <div class="team__item-decor"></div>
+                                        <div class="team__item-name">Джейк Финн</div>
+                                    </a>
                                 </div>
                                 <div class="team__item-info">
                                     <div class="team__item-img">
@@ -184,8 +204,11 @@
                                 </div>
                             </li>
                             <li class="team__item">
-                                <div class="team__item-name">
-                                    <a href="#" class="team__item-link">Николай Иванов</a>
+                                <div class="team__item-desc">
+                                    <a href="#" class="team__item-link">
+                                        <div class="team__item-decor"></div>
+                                        <div class="team__item-name">Николай Иванов</div>
+                                    </a>
                                 </div>
                                 <div class="team__item-info">
                                     <div class="team__item-img">
@@ -536,7 +559,6 @@
             </ul>
         </div>
     </div>
-
 </body>
 
 </html>
