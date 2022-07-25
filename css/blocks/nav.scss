@@ -13,7 +13,8 @@
 
 .nav__list {
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -30,7 +31,8 @@
         border-radius: 50%;
         background: #fff;
         left: rem(-20px);
-        top: rem(10px);    
+        top: rem(10px);
+        transition: .3s;
     }
 
     &:first-child::before {
@@ -39,6 +41,10 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    &:hover {
+        background-color: darken($yellow, 5%);
     }
 }
 
