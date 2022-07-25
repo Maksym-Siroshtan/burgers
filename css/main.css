@@ -644,7 +644,7 @@ header {
   margin-right: 0;
 }
 .nav__item:hover {
-  background-color: #f8ab22;
+  color: #c88206;
 }
 
 .nav__link {
@@ -662,10 +662,18 @@ header {
   color: #fff;
   border-radius: 0.5rem;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #932e13;
 }
 
 .btn--bg-black {
   background: #2f3234;
+}
+.btn--bg-black:hover {
+  background-color: #5f666a;
 }
 
 .btn--form {
@@ -677,6 +685,9 @@ header {
   font-size: 0.875rem;
   font-weight: 300;
   background: none;
+}
+.btn-clear:hover {
+  color: #d1c3ab;
 }
 
 .title {

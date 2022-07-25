@@ -5,10 +5,19 @@
     color: #fff;
     border-radius: rem(8px);
     text-transform: uppercase;
+    transition: .3s;
+
+    &:hover {
+        background-color: darken($orange, 20%);
+    }
 }
 
 .btn--bg-black {
     background: $black;
+
+    &:hover {
+        background-color: lighten($black, 20%);
+    }
 }
 
 .btn--form {
@@ -20,4 +29,8 @@
     font-size: rem(14px);
     font-weight: 300;
     background: none;
+
+    &:hover {
+        color: darken(#f5f2ed, 20%);
+    }
 }
