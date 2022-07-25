@@ -501,6 +501,7 @@ button {
 .we-make-burgers {
   background: url("/burgers/img/bg/bg_we_make_burgers.jpg") center center/cover no-repeat;
   position: relative;
+  overflow: hidden;
 }
 
 .we-make-burgers__container {
@@ -643,9 +644,6 @@ header {
 .nav__item:last-child {
   margin-right: 0;
 }
-.nav__item:hover {
-  color: #c88206;
-}
 
 .nav__link {
   color: #fff;
@@ -653,6 +651,9 @@ header {
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
+}
+.nav__link:hover {
+  color: #c88206;
 }
 
 .btn {
@@ -687,7 +688,7 @@ header {
   background: none;
 }
 .btn-clear:hover {
-  color: #d1c3ab;
+  color: #c88206;
 }
 
 .title {
@@ -735,6 +736,7 @@ header {
 
 .best {
   background: url("/burgers/img/bg/bg_best.jpg") center center/cover no-repeat;
+  overflow: hidden;
 }
 
 .best__list {
@@ -1170,9 +1172,10 @@ header {
 }
 
 .menu {
-  background: url("/burgers/img/bg/bg_menu.jpg") center center/cover no-repeat;
+  background: url("/img/bg/bg_menu.jpg") center center/cover no-repeat;
   color: #fff;
   position: relative;
+  overflow: hidden;
 }
 
 .menu__title {
@@ -1182,8 +1185,7 @@ header {
 }
 @media screen and (max-width: 480px) {
   .menu__title {
-    top: 5rem;
-    left: 2.1875rem;
+    left: 2.5rem;
   }
 }
 
@@ -1196,37 +1198,48 @@ header {
           justify-content: flex-end;
   height: 100%;
 }
-@media screen and (max-width: 480px) {
-  .menu__list {
-    position: absolute;
-    left: 50%;
-  }
-}
 
 .menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   z-index: 10;
+}
+.menu__item--active .menu__link-subtitle {
+  color: #f9b43b;
+}
+.menu__item--active .menu__content {
+  width: 34.375rem;
+}
+@media screen and (max-width: 480px) {
+  .menu__item--active .menu__content {
+    width: 100%;
+  }
+}
+.menu__item--active .menu__text {
+  display: block;
 }
 
 .menu__link {
+  display: inline-block;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   color: inherit;
   height: 100%;
   text-decoration: none;
-  background: url("/burgers-local-test/img/bg/bg_menu_1.png") center center/cover no-repeat;
+  background: url("/img/bg/bg_menu_1.png") center center/cover no-repeat;
 }
 .menu__link--vegan {
-  background: url("/burgers-local-test/img/bg/bg_menu_2.png") center center/cover no-repeat;
+  background: url("/img/bg/bg_menu_2.png") center center/cover no-repeat;
 }
 .menu__link--diets {
-  background: url("/burgers-local-test/img/bg/bg_menu_3.png") center center/cover no-repeat;
+  background: url("/img/bg/bg_menu_3.png") center center/cover no-repeat;
 }
 
-.menu__text {
+.menu__link-subtitle {
+  display: block;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
@@ -1239,10 +1252,14 @@ header {
 .menu__content {
   width: 0;
   height: 100%;
-  text-align: center;
-  padding-top: 1.25rem;
-  overflow: hidden;
   background-color: rgba(20, 20, 20, 0.7);
+  overflow: hidden;
+}
+
+.menu__text {
+  display: none;
+  font-weight: 300;
+  padding: 3.875rem 2.3125rem 0 2.0625rem;
 }
 
 .about {
