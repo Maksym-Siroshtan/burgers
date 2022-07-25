@@ -42,10 +42,6 @@
     &:last-child {
         margin-right: 0;
     }
-
-    &:hover {
-        color: darken($yellow, 20%);
-    }
 }
 
 .nav__link  {
@@ -54,4 +50,8 @@
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
+
+    &:hover {
+        color: darken($yellow, 20%);
+    }
 }
