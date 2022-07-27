@@ -73,6 +73,7 @@
 
     @include phones {
         line-height: rem(20px);
+        padding: rem(40px) rem(15px) 0;
     }
 }
 
