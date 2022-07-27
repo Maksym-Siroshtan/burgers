@@ -1284,9 +1284,9 @@ footer {
   bottom: 0;
   background-color: #2f3234;
   padding: 0.625rem 0;
+  width: 100%;
 }
-
-.footer--container {
+footer--container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1299,7 +1299,7 @@ footer {
           align-items: center;
 }
 @media screen and (max-width: 480px) {
-  .footer--container {
+  footer--container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1307,9 +1307,11 @@ footer {
   }
 }
 
-.contacts {
-  text-align: center;
-  margin-bottom: 0.625rem;
+@media screen and (max-width: 480px) {
+  .contacts {
+    text-align: center;
+    margin-bottom: 0.625rem;
+  }
 }
 
 .contacts p {
