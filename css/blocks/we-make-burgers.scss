@@ -16,6 +16,10 @@
     @include tablets {
         flex-wrap: wrap;
     }
+
+    @include iphoneSE {
+        flex: 0.9;
+    }
 }
 
 .we-make-burgers__image-pic {

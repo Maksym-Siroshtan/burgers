@@ -10,6 +10,10 @@
         flex-direction: column;
         padding: 0 rem(30px);
     }
+
+    @include iphoneSE {
+        padding: 0;
+    }
 }
 
 .best__item {

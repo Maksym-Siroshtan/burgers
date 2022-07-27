@@ -509,6 +509,13 @@ img {
         flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 450px) {
+  .we-make-burgers__content {
+    -webkit-box-flex: 0.9;
+        -ms-flex: 0.9;
+            flex: 0.9;
+  }
+}
 
 .we-make-burgers__image-pic {
   width: 100%;
@@ -543,6 +550,12 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 0.75rem;
+}
+@media screen and (max-width: 450px) {
+  header {
+    position: absolute;
+    width: 100%;
+  }
 }
 
 .header__links {
@@ -726,6 +739,11 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0 1.875rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .best__list {
+    padding: 0;
   }
 }
 

@@ -3,6 +3,12 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-top: rem(12px);
+
+    @include iphoneSE {
+        position: absolute;
+        width: 100%;
+    }
+    
 }
 
 .header__links {
