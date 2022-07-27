@@ -7,10 +7,6 @@
     @include tablets {
         display: none;
     }
-
-    @include phones {
-        display: none;
-    }
 }
 
 .fixed-menu__item {
@@ -18,7 +14,7 @@
     &:hover {
         
         .fixed-menu__link {
-            border-color: #fff;
+            border-color: $white;
             transition: .3s;
         }
     }
@@ -26,7 +22,7 @@
     &--active {
 
         .fixed-menu__link {
-        border-color: #fff;
+        border-color: $white;
         }
     }
 }
@@ -42,7 +38,7 @@
 
     &::before {
         content: '';
-        background: #fff;
+        background: $white;
         width: 6px;
         height: 6px;
         border-radius: 50%;

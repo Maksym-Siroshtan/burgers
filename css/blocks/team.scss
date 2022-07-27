@@ -10,7 +10,7 @@
     bottom: 0;
     left: 50%;
     opacity: 0.92;
-    background-color: #2f3234;
+    background-color: $black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,7 @@
     margin-bottom: rem(35px);
     transition: 1.5s;
     font-family: Ubuntu-Regular;
-    color: #fff;
+    color: $white;
     font-size: rem(14.1px);
 
     &:last-child {
@@ -53,7 +53,7 @@
     &--active {
 
         .team__item-name {
-            color: #f9b43b;
+            color: $yellow;
         }
 
         .team__item-info {
@@ -65,7 +65,7 @@
             width: 0;
             height: 0;
             border: 5px solid transparent;
-            border-bottom-color: #f9b43b;
+            border-bottom-color: $yellow;
         }
     }
 }
@@ -87,7 +87,7 @@
     width: 0;
     height: 0;
     border: 5px solid transparent;
-    border-top-color: #f9b43b;
+    border-top-color: $yellow;
 }
 
 .team__item-img {

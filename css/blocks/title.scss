@@ -16,7 +16,7 @@
         }
     
         &-white {
-            color: #fff;
+            color: $white;
         }
     }
 }
@@ -24,7 +24,7 @@
 .subtitle {
     @include lifehack;
     font-size: rem(65px);
-    color: #ffffff;
+    color: $white;
     line-height: 1;
     letter-spacing: -0.025em;
 

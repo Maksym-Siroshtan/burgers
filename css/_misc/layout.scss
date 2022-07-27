@@ -54,6 +54,15 @@ body {
     padding: 10px 0;
 }
 
+footer {
+    position: relative;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 // tag styles reset
 
 h1, h2, h3, h4, h5, h6 {
@@ -79,16 +88,12 @@ p {
     margin: 0;
 }
 
-footer {
-    position: relative;
-    width: 100%;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 button {
     cursor: pointer;
     border: 1px solid transparent;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }

@@ -439,6 +439,16 @@ body {
   padding: 10px 0;
 }
 
+footer {
+  position: relative;
+  width: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-weight: normal;
@@ -462,19 +472,14 @@ p {
   margin: 0;
 }
 
-footer {
-  position: relative;
-  width: 100%;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 button {
   cursor: pointer;
   border: 1px solid transparent;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .section {
@@ -529,13 +534,6 @@ button {
   }
 }
 
-.we-make-burgers__image-pic {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .we-make-burgers__desc {
   padding-top: 4.1875rem;
   padding-left: 1rem;
@@ -587,13 +585,9 @@ header {
       -ms-flex: 1;
           flex: 1;
   margin-right: 0.625rem;
+  color: #ffffff;
 }
 @media screen and (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-}
-@media screen and (max-width: 480px) {
   .nav {
     display: none;
   }
@@ -613,7 +607,6 @@ header {
 .nav__item {
   position: relative;
   margin-right: 1.875rem;
-  color: #fff;
 }
 .nav__item::before {
   content: "";
@@ -621,7 +614,7 @@ header {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: #ffffff;
   left: -1.25rem;
   top: 0.625rem;
   -webkit-transition: 0.3s;
@@ -635,7 +628,8 @@ header {
 }
 
 .nav__link {
-  color: #fff;
+  display: inline-block;
+  color: inherit;
   font-size: 0.8125rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -649,7 +643,7 @@ header {
   font-size: 0.8125rem;
   padding: 0.5rem 1rem;
   background: #e45028;
-  color: #fff;
+  color: #ffffff;
   border-radius: 0.5rem;
   text-transform: uppercase;
   -webkit-transition: 0.3s;
@@ -671,7 +665,7 @@ header {
 }
 
 .btn-clear {
-  color: #f5f2ed;
+  color: #ffffff;
   font-size: 0.875rem;
   font-weight: 300;
   background: none;
@@ -696,7 +690,7 @@ header {
   color: #2f3234;
 }
 .title--color-white {
-  color: #fff;
+  color: #ffffff;
 }
 
 .subtitle {
@@ -823,7 +817,7 @@ header {
   position: relative;
   width: 25%;
   height: 50%;
-  color: #fff;
+  color: #ffffff;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
@@ -897,7 +891,7 @@ header {
 
 .order {
   background: url("/burgers/img/bg/bg_order.jpg") center center/cover no-repeat;
-  color: #fff;
+  color: #ffffff;
 }
 
 .order__title {
@@ -985,7 +979,7 @@ header {
 }
 
 .form__input {
-  background: #fff;
+  background: #ffffff;
   border-radius: 5px;
   border: none;
   padding: 0.625rem 1.3125rem;
@@ -1017,7 +1011,7 @@ header {
   height: 16px;
   position: relative;
   margin-right: 7px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .form__visible::before {
   content: "✔";
@@ -1048,6 +1042,10 @@ header {
 .logo-img {
   width: 5rem;
   height: 4.6875rem;
+}
+
+.logo__link {
+  display: inline-block;
 }
 
 .team {
@@ -1107,7 +1105,7 @@ header {
   -webkit-transition: 1.5s;
   transition: 1.5s;
   font-family: Ubuntu-Regular;
-  color: #fff;
+  color: #ffffff;
   font-size: 0.88125rem;
 }
 .team__item:last-child {
@@ -1171,9 +1169,8 @@ header {
 
 .menu {
   background: url("/burgers/img/bg/bg_menu.jpg") center center/cover no-repeat;
-  color: #fff;
+  color: #ffffff;
   position: relative;
-  overflow: hidden;
 }
 
 .menu__title {
@@ -1311,7 +1308,7 @@ header {
 }
 .messenger__link :hover {
   opacity: 1;
-  background: #000;
+  background: #2f3234;
 }
 
 .messenger__icon {
@@ -1332,19 +1329,14 @@ header {
     display: none;
   }
 }
-@media screen and (max-width: 480px) {
-  .fixed-menu {
-    display: none;
-  }
-}
 
 .fixed-menu__item:hover .fixed-menu__link {
-  border-color: #fff;
+  border-color: #ffffff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .fixed-menu__item--active .fixed-menu__link {
-  border-color: #fff;
+  border-color: #ffffff;
 }
 
 .fixed-menu__link {
@@ -1358,7 +1350,7 @@ header {
 }
 .fixed-menu__link::before {
   content: "";
-  background: #fff;
+  background: #ffffff;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -1394,7 +1386,7 @@ header {
   display: block;
   width: 1.6875rem;
   height: 0.25rem;
-  background: #fff;
+  background: #ffffff;
   border-radius: 0.3125rem;
 }
 .burger-menu-link__design::before, .burger-menu-link__design:after {

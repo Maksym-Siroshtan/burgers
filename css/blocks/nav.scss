@@ -1,12 +1,9 @@
 .nav {
     flex: 1;
     margin-right: rem(10px);
+    color: $white;
 
     @include tablets {
-        display: none;
-    }
-
-    @include phones {
         display: none;
     }
 }
@@ -21,7 +18,7 @@
 .nav__item {
     position: relative;
     margin-right: rem(30px);
-    color: #fff;
+    
 
     &::before {
         content: "";
@@ -29,7 +26,7 @@
         width: 4px;
         height: 4px;
         border-radius: 50%;
-        background: #fff;
+        background: $white;
         left: rem(-20px);
         top: rem(10px);
         transition: .3s;
@@ -45,7 +42,8 @@
 }
 
 .nav__link  {
-    color: #fff;
+    display: inline-block;
+    color: inherit;
     font-size: rem(13px);
     font-weight: 500;
     text-transform: uppercase;

@@ -1,8 +1,7 @@
 .menu {
     background: url('/burgers/img/bg/bg_menu.jpg') center center / cover no-repeat;
-    color: #fff;
+    color: $white;
     position: relative;
-    overflow: hidden;
 }
 
 .menu__title {
