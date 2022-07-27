@@ -1307,6 +1307,11 @@ footer {
   }
 }
 
+.contacts {
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+
 .contacts p {
   font-weight: 300;
   color: #ffffff;
