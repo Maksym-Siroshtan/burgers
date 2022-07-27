@@ -12,7 +12,7 @@
 }
 
 .form__column {
-    width: 50%;
+    flex: 1;
     margin-right: rem(15px);
 
     &:last-child {
@@ -55,6 +55,12 @@
 
     &:last-child {
         margin-right: 0;
+    }
+
+    &--disappears {
+        @include phones {
+            display: none;
+        }
     }
 }
 

@@ -70,6 +70,10 @@
     line-height: rem(64px);
     font-weight: 400;
     padding: rem(40px) rem(8px) 0;
+
+    @include phones {
+        line-height: rem(20px);
+    }
 }
 
 .menu__content {

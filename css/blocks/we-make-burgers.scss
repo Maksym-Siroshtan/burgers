@@ -18,6 +18,17 @@
     }
 }
 
+.we-make-burgers__image {
+    width: rem(417px);
+    height: rem(424px);
+}
+
+.we-make-burgers__image-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .we-make-burgers__desc {
     padding-top: rem(67px);
     padding-left: rem(16px);
