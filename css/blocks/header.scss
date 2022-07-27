@@ -4,9 +4,13 @@ header {
     justify-content: space-between;
     padding-top: rem(12px);
 
-    @include iphoneSE {
+
+    @include tablets {
         position: absolute;
         width: 100%;
+    }
+
+    @include iphoneSE {
         padding-top: 0;
     }
     
