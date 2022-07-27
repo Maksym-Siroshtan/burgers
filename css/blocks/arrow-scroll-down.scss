@@ -1,7 +1,8 @@
 .arrow-scroll-down {
     position: absolute;
     bottom: rem(35px);
-    right: 48%;
+    right: 50%;
+    transform: translateY(50%);
 }
 
 .arrow-scroll-down__btn {

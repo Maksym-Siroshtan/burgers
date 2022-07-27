@@ -94,7 +94,7 @@
     margin-right: rem(21px);
 
     @include tablets {
-        margin-right: 0;
+        margin: 0 auto;
     }
 }
 
