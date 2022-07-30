@@ -957,7 +957,6 @@ header {
 }
 .form__row--radio {
   margin-bottom: 1.375rem;
-  width: 80%;
 }
 .form__row:last-child {
   margin-bottom: 0;
@@ -972,22 +971,24 @@ header {
 }
 
 .form__block {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   margin-right: 0.9375rem;
 }
 .form__block:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: 480px) {
-  .form__block--disappears {
-    display: none;
-  }
+.form__block--width {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 @media screen and (max-width: 480px) {
   .form__block--remove-margin-right {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__block--disappears {
+    display: none;
   }
 }
 
@@ -1026,8 +1027,8 @@ header {
 .form__visible {
   display: inline-block;
   vertical-align: middle;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   position: relative;
   margin-right: 7px;
   background-color: #ffffff;
@@ -1051,8 +1052,8 @@ header {
   top: 4px;
   left: 4px;
   opacity: 0;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   position: absolute;
   background: red;

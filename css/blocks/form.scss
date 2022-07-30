@@ -1,5 +1,13 @@
 .form {
     font-size: rem(14px);
+
+    @include tablets {
+        padding: 0 rem(125px);
+    }
+
+    @include phones {
+        padding: 0;
+    }
 }
 
 .form__elem {
@@ -7,13 +15,12 @@
 
     @include tablets {
         flex-direction: column;
-        align-items: center;
     }
 }
 
 .form__column {
     flex: 1;
-    margin-right: rem(15px);
+    margin-right: rem(21px);
 
     &:last-child {
         margin-right: 0;
@@ -35,8 +42,8 @@
     margin-bottom: rem(19px);
 
     &--radio {
-        margin-bottom: rem(22px);
-        width: 80%;
+        margin-bottom: rem(21px);
+        margin-right: 0;
     }
 
     &:last-child {
@@ -50,22 +57,25 @@
 }
 
 .form__block {
-    flex:1;
-    margin-right: rem(15px);
+    margin-right: rem(20px);
 
     &:last-child {
         margin-right: 0;
     }
 
-    &--disappears {
-        @include phones {
-            display: none;
-        }
+    &--width {
+        flex:1;
     }
-
+  
     &--remove-margin-right {
         @include phones {
             margin-right: 0;
+        }
+    }
+
+    &--disappears {
+        @include phones {
+            display: none;
         }
     }
 }
@@ -85,8 +95,9 @@
     width: 100%;
 
     &--textarea {
-        height: rem(109px);
+        height: rem(112px);
         resize: none;
+        margin-bottom: rem(15px);
 
         @include tablets {
             margin-bottom: rem(10px);
@@ -106,21 +117,21 @@
 .form__visible {
     display: inline-block;
     vertical-align: middle;
-    width: 16px;
-    height: 16px;
+    width: rem(15px);
+    height: rem(15px);
     position: relative;
-    margin-right: 7px;
+    margin-right: rem(9px);
     background-color: $white;
 
     &::before {
         content: "\2714";
         top: 0;
-        left: 2px;
+        left: rem(2px);
         opacity: 0;
-        width: 8px;
-        height: 8px;
+        width: rem(7px);
+        height: rem(7px);
         position: absolute;
-        color: red;
+        color: $red;
     }   
 }
 
@@ -129,13 +140,13 @@
 
     &::before {
         content: "";
-        top: 4px;
-        left: 4px;
+        top: rem(4px);
+        left: rem(4px);
         opacity: 0;
-        width: 8px;
-        height: 8px;
+        width: rem(7px);
+        height: rem(7px);
         border-radius: 50%;
         position: absolute;
-        background: red;
+        background: $red;
    }
 }
