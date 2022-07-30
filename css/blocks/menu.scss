@@ -34,7 +34,7 @@
         .menu__content {
             width: rem(550px);
 
-            @include phones {
+            @include tablets {
                 width: 100%;
             }
         }
