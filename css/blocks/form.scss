@@ -50,7 +50,7 @@
         margin-bottom: 0;
     }
 
-    @include  phones {
+    @include  phones-xl {
         justify-content: center;
         width: 100%;
     }
