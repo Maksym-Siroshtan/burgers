@@ -32,7 +32,7 @@
         width: 100%;
     }
 
-    @include phones {
+    @include phones-xl {
       margin-right: 0;
     }
 }
@@ -73,13 +73,13 @@
     }
   
     &--remove-margin-right {
-        @include phones {
+        @include phones-xl {
             margin-right: 0;
         }
     }
 
     &--disappears {
-        @include phones {
+        @include phones-xl {
             display: none;
         }
     }
@@ -87,7 +87,7 @@
 
 .form__buttons {
 
-    @include phones {
+    @include phones-xl {
         text-align: center;
     }
 }

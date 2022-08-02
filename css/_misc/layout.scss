@@ -5,7 +5,7 @@ html {
         font-size: 15px;
     }
 
-    @include phones {
+    @include phones-xl {
         font-size: 14px;
     }
 }
@@ -20,7 +20,7 @@ body {
     -webkit-font-smoothing: antialised;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    @include ubuntu();
+    @include setFontStyleUbuntu();
     color: $black;
 }
 

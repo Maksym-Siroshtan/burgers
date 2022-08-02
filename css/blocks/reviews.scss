@@ -52,7 +52,7 @@
 
 .reviews__title {
     margin-bottom: rem(30px);
-    @include gagalin;
+    @include setFontStyleGagalin;
     font-weight: 400;
     font-size: rem(14px);
 }
@@ -62,7 +62,7 @@
     font-size: rem(14px);
     font-weight: 300;
 
-    @include phones {
+    @include phones-xl {
         display: none;
     }
 }

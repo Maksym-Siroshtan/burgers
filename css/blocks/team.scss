@@ -77,7 +77,7 @@
 }
 
 .team__item-name {
-    @include gagalin;
+    @include setFontStyleGagalin;
     font-weight: 400;
     margin-bottom: rem(17px);
 }

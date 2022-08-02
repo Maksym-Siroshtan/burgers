@@ -17,7 +17,7 @@
         flex-wrap: wrap;
     }
 
-    @include iphoneSE {
+    @include phones-l {
         flex: 0.9;
     }
 }

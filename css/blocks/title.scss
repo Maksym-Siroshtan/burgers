@@ -2,10 +2,10 @@
     font-size: rem(72px);
     font-weight: 400;
     color: $yellow;
-    @include gagalin();
+    @include setFontStyleGagalin();
     line-height: 1;
 
-    @include phones {
+    @include phones-xl {
         font-size: rem(62px);
     }
 
@@ -22,13 +22,13 @@
 }
 
 .subtitle {
-    @include lifehack;
+    @include setFontStyleLifehack;
     font-size: rem(65px);
     color: $white;
     line-height: 1;
     letter-spacing: -0.025em;
 
-    @include phones {
+    @include phones-xl {
         font-size: rem(55px);
     }
 }

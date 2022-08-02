@@ -10,7 +10,7 @@
         justify-content: space-between;
         align-items: center;
 
-        @include phones {
+        @include phones-xl {
             flex-direction: column;
         }
     }

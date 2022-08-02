@@ -1,5 +1,5 @@
 .contacts {
-    @include phones {
+    @include phones-xl {
         text-align: center;
         margin-bottom: rem(10px);
     }

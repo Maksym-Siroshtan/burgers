@@ -10,7 +10,7 @@ header {
         width: 100%;
     }
 
-    @include iphoneSE {
+    @include phones-l {
         padding-top: 0;
     }
     

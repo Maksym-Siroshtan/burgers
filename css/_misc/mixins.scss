@@ -1,4 +1,4 @@
-@mixin ubuntu($style:light) {
+@mixin setFontStyleUbuntu($style:light) {
     font-family: 'Ubuntu', Helvetica, sans-serif;
 
     @if $style == light {
@@ -14,10 +14,10 @@
     }
 }
 
-@mixin gagalin {
+@mixin setFontStyleGagalin {
     font-family: 'Gagalin-Regular', Helvetica, sans-serif;
 }
 
-@mixin lifehack {
+@mixin setFontStyleLifehack {
     font-family: 'Lifehack-Medium';
 }
