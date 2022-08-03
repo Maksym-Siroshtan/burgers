@@ -1,19 +1,12 @@
-//colors
-$orange: #e45028;
-$yellow: #f9b43b;
-$black: #2f3234;
-$red: #e35028;
-
-$z-fixed-menu: 100;
-$z-acco: 10;
-
 //normalize
 @import "_misc/normalize.scss";
 
 //media
-//@import "_misc/media.scss";
+@import "_misc/media.scss";
 
 //setups
+@import "_misc/vars.scss";
+@import "_misc/mixins.scss";
 @import "_misc/fonts.scss";
 @import "_misc/layout.scss";
 
@@ -33,6 +26,7 @@ $z-acco: 10;
 @import "blocks/team.scss";
 @import "blocks/menu.scss";
 @import "blocks/about.scss";
+@import "blocks/footer.scss";
 @import "blocks/contacts.scss";
 @import "blocks/messenger.scss";
 @import "blocks/fixed-menu.scss";

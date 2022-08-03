@@ -1,18 +1,24 @@
 .nav {
     flex: 1;
-    margin-right: 10px;
+    margin-right: rem(10px);
+    color: $white;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .nav__list {
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
 .nav__item {
     position: relative;
-    margin-right: 36px;
-    color: #fff;
+    margin-right: rem(30px);
+    
 
     &::before {
         content: "";
@@ -20,9 +26,10 @@
         width: 4px;
         height: 4px;
         border-radius: 50%;
-        background: #fff;
-        left: -20px;
-        top: 10px;    
+        background: $white;
+        left: rem(-20px);
+        top: rem(10px);
+        transition: .3s;
     }
 
     &:first-child::before {
@@ -35,13 +42,14 @@
 }
 
 .nav__link  {
-    color: #fff;
-    font-size: 13px;
+    display: inline-block;
+    color: inherit;
+    font-size: rem(13px);
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
 
+    &:hover {
+        color: darken($yellow, 20%);
+    }
 }
-
-
-

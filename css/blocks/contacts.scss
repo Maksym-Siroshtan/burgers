@@ -1,6 +1,13 @@
+.contacts {
+    @include phones-xl {
+        text-align: center;
+        margin-bottom: rem(10px);
+    }
+}
+
 .contacts p {
     font-weight: 300;
-    color: #ffffff;
+    color: $white;
 }
 
 .contacts__icon, .contacts__phone {
@@ -9,16 +16,16 @@
 }
 
 .contacts__icon {
-    margin-right: 5px;
+    margin-right: rem(5px);
 }
 
 .contacts__icon-block {
-    width: 11px;
-    height: 11px;
+    width: rem(11px);
+    height: rem(11px);
 }
 
 .contacts__phone {
     font-weight: 700;
-    color: #e45028;
+    color: $orange;
     text-decoration: none;
 }

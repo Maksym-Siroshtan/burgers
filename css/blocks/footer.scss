@@ -1,0 +1,17 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: $black;
+    padding: rem(10px) 0;
+    width: 100%;
+
+    &--container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @include phones-xl {
+            flex-direction: column;
+        }
+    }
+}

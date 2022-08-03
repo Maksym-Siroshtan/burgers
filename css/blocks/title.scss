@@ -1,9 +1,13 @@
 .title {
-    font-size: 72px;
+    font-size: rem(72px);
     font-weight: 400;
     color: $yellow;
-    font-family: Gagalin-Regular;
+    @include setFontStyleGagalin();
     line-height: 1;
+
+    @include phones-xl {
+        font-size: rem(62px);
+    }
 
     &--color {
 
@@ -12,16 +16,19 @@
         }
     
         &-white {
-            color: #fff;
+            color: $white;
         }
     }
-
 }
 
 .subtitle {
-    font-family: Lifehack-Medium;
-    font-size: 65px;
-    color: #ffffff;
+    @include setFontStyleLifehack;
+    font-size: rem(65px);
+    color: $white;
     line-height: 1;
     letter-spacing: -0.025em;
+
+    @include phones-xl {
+        font-size: rem(55px);
+    }
 }

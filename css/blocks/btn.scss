@@ -1,23 +1,36 @@
 .btn {
-    font-size: 13px;
-    padding: 8px 16px;
+    font-size: rem(13px);
+    padding: rem(8px) rem(16px);
     background: $orange;
-    color: #fff;
-    border-radius: 8px;
+    color: $white;
+    border-radius: rem(8px);
     text-transform: uppercase;
+    transition: .3s;
+
+    &:hover {
+        background-color: darken($orange, 20%);
+    }
 }
 
 .btn--bg-black {
     background: $black;
+
+    &:hover {
+        background-color: lighten($black, 20%);
+    }
 }
 
 .btn--form {
-    margin-right: 15px;
+    margin-right: rem(10px);
 }
 
 .btn-clear {
-    color : #f5f2ed;
-    font-size: 14px;
+    color : $white;
+    font-size: rem(14px);
     font-weight: 300;
     background: none;
+
+    &:hover {
+        color: darken($yellow, 20%);
+    }
 }

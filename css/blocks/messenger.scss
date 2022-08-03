@@ -3,7 +3,7 @@
 }
 
 .messenger__item {
-    margin-right: 20px;
+    margin-right: rem(20px);
     transition: .3s;
 
     &:last-child {
@@ -16,13 +16,13 @@
     
     :hover {
         opacity: 1;
-        background: #000;
+        background: $black;
     }
 }
 
 .messenger__icon {
     border-radius: 2px;
     opacity: 0.3;
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
 }
