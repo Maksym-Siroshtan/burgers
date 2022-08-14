@@ -660,6 +660,10 @@ header {
   background-color: #932e13;
 }
 
+.btn--slider {
+  margin-left: 29px;
+}
+
 .btn--bg-black {
   background: #2f3234;
 }
