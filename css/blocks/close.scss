@@ -23,8 +23,8 @@
 
     &--color-red {
         &::after, &::before {
-            top: rem(20px);
-            right: rem(20px);
+            top: rem(10px);
+            right: 0;
             background-color: $red;
         }
     }

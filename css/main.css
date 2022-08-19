@@ -509,8 +509,8 @@ img {
           transform: rotate(-45deg);
 }
 .close--color-red::after, .close--color-red::before {
-  top: 1.25rem;
-  right: 1.25rem;
+  top: 0.625rem;
+  right: 0;
   background-color: #e35028;
 }
 
