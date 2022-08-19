@@ -509,8 +509,8 @@ img {
           transform: rotate(-45deg);
 }
 .close--slider-pop-up {
-  top: 0.625rem;
-  right: 0;
+  top: 1.875rem;
+  right: 2.1875rem;
 }
 .close--slider-pop-up::after, .close--slider-pop-up::before {
   background-color: #e35028;
