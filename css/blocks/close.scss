@@ -21,10 +21,10 @@
         transform: rotate(-45deg);
     }
 
-    &--color-red {
+    &--slider-pop-up {
+        top: rem(10px);
+        right: 0;
         &::after, &::before {
-            top: rem(10px);
-            right: 0;
             background-color: $red;
         }
     }

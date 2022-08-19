@@ -508,9 +508,11 @@ img {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.close--color-red::after, .close--color-red::before {
+.close--slider-pop-up {
   top: 0.625rem;
   right: 0;
+}
+.close--slider-pop-up::after, .close--slider-pop-up::before {
   background-color: #e35028;
 }
 
