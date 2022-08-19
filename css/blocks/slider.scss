@@ -1,0 +1,204 @@
+.slider {
+    background: $yellow;
+    background-image: linear-gradient(0.0deg, $yellow 0%, #eb8c38 50%, $yellow 70%, $yellow 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: $white;
+    position: relative;
+}
+
+.slider__arrow {
+    margin: auto;
+    @include phones-l {
+        position: absolute;
+        bottom: 50%;
+        padding: 0;
+    }
+    &--left {
+        transform: rotate(90deg);
+        @include phones-l {
+            left: 0;
+        }
+    }
+    &--right {
+        transform: rotate(-90deg);
+        @include phones-l {
+            right: 0;
+        }
+    }
+}
+
+.slider__list {
+    display: flex;
+    align-items: center;
+    padding: 0 rem(12px);
+    @include phones-l {
+        padding: 0;
+    }
+}
+
+.slider__item {
+    display: flex;
+    align-items: center;
+    @include phones-xxl {
+        flex-direction: column;
+        padding: 0;
+    }
+    @include phones-xl {
+        padding: 0 rem(10px);
+    }
+    @include phones-l {
+        padding: 0;
+    }
+}
+
+.slider__left {
+    @include tablets {
+        position: relative;
+    }
+}
+
+.slider__left,
+.slider__right {
+    flex: 1;
+}
+
+.slider__right {
+    @include tablets {
+        text-align: center;
+    }
+}
+
+.slider__compound {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: rem(90px);
+    height: rem(90px);
+    background-color: rgba($color: $red, $alpha: 0.4);
+    border-radius: 5px;
+
+    &:hover {
+        .slider__pop-up {
+            display: flex;
+        }
+    }
+}
+
+.slider__compound-pic {
+    width: rem(46px);
+    height: rem(44px);
+}
+
+.slider__text {
+    @include setFontStyleGagalin();
+    font-size: rem(14px);
+    line-height: rem(28px);
+    font-weight: 400;
+    &--kkal {
+        padding-left: rem(15px);
+    }
+}
+
+.slider__pop-up {
+    position: absolute;
+    top: 0;
+    left: rem(90px);
+    display: flex;
+    align-items: center;
+    background: $white;
+    border-radius: 5px;
+    width: rem(372px);
+    height: rem(332px);
+    opacity: 0.9;
+    display: none;
+
+    @include tablets {
+        left: rem(-13px);
+    }
+}
+
+.slider__pop-up-list {
+    width: 100%;
+}
+
+.slider__pop-up-item {
+    display: flex;
+    align-items: center;
+}
+
+.slider__pop-up-image {
+    margin: 0 rem(25px);
+}
+
+.slider__pop-up-icon {
+    width: rem(48px);
+    height: rem(43px);
+}
+
+.slider__pop-up-Ingredients {
+    font-size: rem(14px);
+    font-weight: 500;
+    color: $black;
+    flex: 1;
+    &--weight {
+        font-weight: 300;
+    }
+}
+
+.slider__image-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__calories {
+    opacity: 0.5;
+    @include tablets {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.slider__calories-pic {
+    width: rem(60px);
+    height: rem(60px);
+}
+
+.slider__title {
+    margin-bottom: rem(30px);
+}
+
+.slider__content {
+    margin-bottom: rem(36px);
+}
+
+.slider__content p {
+    font-size: rem(14px);
+    line-height: rem(23px);
+    font-weight: 300;
+}
+
+.slider__order {
+    display: flex;
+    align-items: baseline;
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+.slider__price {
+    @include setFontStyleGagalin();
+    font-size: rem(72px);
+    line-height: rem(28px);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    color: $red;
+    &--currency {
+        font-size: rem(30px);
+    }
+}
