@@ -73,6 +73,7 @@
 }
 
 .slider__right {
+    width: rem(453px);
     @include tablets-xl {
         display: flex;
         flex-direction: column;
@@ -81,6 +82,9 @@
     }
     @include tablets {
         text-align: center;
+    }
+    @include phones-xl {
+        width: auto;
     }
 }
 
