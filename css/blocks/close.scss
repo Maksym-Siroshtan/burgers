@@ -28,4 +28,10 @@
             background-color: $red;
         }
     }
+
+    &--reviews-close {
+        &::after, &::before {
+            background-color: $red;
+        }
+    }
 }

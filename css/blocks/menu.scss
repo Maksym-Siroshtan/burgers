@@ -82,6 +82,7 @@
     height: 100%;
     background-color: rgba(20,20,20,0.7);
     overflow: hidden;
+    transition: width .8s ease-in;
 }
 
 .menu__text {

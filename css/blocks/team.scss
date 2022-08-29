@@ -21,6 +21,8 @@
 }
 
 .team__desc {
+    position: absolute;
+    top: 20%;
     @include tablets {
         text-align: center;
         padding: 0 rem(255px);
@@ -32,7 +34,10 @@
 }
 
 .team__item-info {
-    display: none;
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-in;
 
     @include tablets {
         flex-direction: column;
@@ -57,11 +62,11 @@
         }
 
         .team__item-info {
-            display: flex;
+            max-height: rem(200px);
         }
 
         .team__item-decor {
-            margin-top: rem(3px);
+            margin-top: rem(10px);
             width: 0;
             height: 0;
             border: 5px solid transparent;
@@ -79,11 +84,12 @@
 .team__item-name {
     @include setFontStyleGagalin;
     font-weight: 400;
+    font-size: rem(25px);
     margin-bottom: rem(17px);
 }
 
 .team__item-decor {
-    margin: rem(7px) rem(5px) 0;
+    margin: rem(15px) rem(10px) 0;
     width: 0;
     height: 0;
     border: 5px solid transparent;
@@ -109,6 +115,7 @@
 .team__item-profession {
     margin-bottom: rem(10px);
     font-weight: 700;
+    line-height: rem(24px);
 }
 
 .team__item-text p {

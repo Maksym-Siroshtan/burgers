@@ -14,6 +14,7 @@
         position: absolute;
         bottom: 50%;
         padding: 0;
+        z-index: $z-slider-scroll;
     }
     &--left {
         transform: rotate(90deg);
@@ -30,6 +31,7 @@
 }
 
 .slider__list {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 0 rem(12px);
@@ -39,9 +41,14 @@
 }
 
 .slider__item {
-    display: flex;
+    left: 0;
+    display: none;
     align-items: center;
-    @include phones-xxl {
+
+    &--active {
+        display: flex;
+    }
+    @include tablets-xl {
         flex-direction: column;
         padding: 0;
     }
@@ -54,6 +61,7 @@
 }
 
 .slider__left {
+    margin-right: rem(15px);
     @include tablets {
         position: relative;
     }
@@ -65,6 +73,12 @@
 }
 
 .slider__right {
+    @include tablets-xl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     @include tablets {
         text-align: center;
     }
@@ -149,10 +163,14 @@
     }
 }
 
-.slider__image-pic {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.slider__image {
+    width: rem(430px);
+    height: rem(340px);
+    display: flex;
+    align-items: center;
+    @include phones-l {
+        width: auto;
+    }
 }
 
 .slider__calories {
