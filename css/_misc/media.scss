@@ -8,8 +8,8 @@
     }
 }
 
-@mixin phones-xxl() {
-    @media screen and (max-width:580px) {
+@mixin tablets-xl() {
+    @media screen and (max-width:1000px) {
         @content;
     }
 }
