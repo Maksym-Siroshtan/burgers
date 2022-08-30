@@ -33,7 +33,7 @@
 
         .menu__content {
             width: rem(550px);
-
+            opacity: 1;
             @include tablets {
                 width: 100%;
             }
@@ -79,9 +79,11 @@
 
 .menu__content {
     width: 0;
+    opacity: 0;
     height: 100%;
     background-color: rgba(20,20,20,0.7);
     overflow: hidden;
+    transition: opacity .5s ease-in;
 }
 
 .menu__text {

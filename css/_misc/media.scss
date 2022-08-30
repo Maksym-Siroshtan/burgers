@@ -8,6 +8,12 @@
     }
 }
 
+@mixin tablets-xl() {
+    @media screen and (max-width:1000px) {
+        @content;
+    }
+}
+
 @mixin phones-xl() {
     @media screen and (max-width:480px) {
         @content;

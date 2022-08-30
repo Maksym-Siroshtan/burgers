@@ -1,3 +1,7 @@
+.reviews {
+    position: relative;
+}
+
 .reviews__list {
     display: flex;
     flex-wrap: wrap;
@@ -65,4 +69,31 @@
     @include phones-xl {
         display: none;
     }
+}
+
+.reviews__overlay-modal {
+    position: relative;
+    color: $black;
+    font-size: rem(14px);
+    max-width: rem(473px);
+    background-color: $white;
+    border-radius: 10px;
+    padding: rem(30px) rem(33px) rem(27px) rem(19px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.reviews__overlay-title {
+    @include setFontStyleGagalin();
+    line-height: rem(28px);
+    font-size: rem(14px);
+    font-weight: 400;
+    margin-bottom: rem(30px);
+}
+
+.reviews__overlay-text p {
+    line-height: rem(24px);
+    font-weight: 300;
 }
