@@ -47,19 +47,27 @@ const phone = document.querySelector('#phone');
 
         const xhr = new XMLHttpRequest();
         xhr.responseType = 'json';
-        xhr.open('POST', 'https://eo4026uexmq296a.m.pipedream.net')
+        xhr.open('POST', 'https://eorosyhq4rx8nnx.m.pipedream.net');
         xhr.send(JSON.stringify(data));
         xhr.addEventListener('load', () => {
+
+            let paddingOfSetForm = window.innerWidth - document.body.offsetWidth + 'px';
+            document.body.style.paddingRight = paddingOfSetForm;
+            document.getElementById("myForm").reset();
 
             if (xhr.status >= 400) {
                 formOverlay.style.display = 'block';
                 formOverlayText.textContent = 'Отправить сообщение не удалось'
                 formOverlayText.style.color = 'red';
+                document.body.style.overflow = 'hidden';
             } else {
                 formOverlay.style.display = 'block';
+                document.body.style.overflow = 'hidden';
             }
                 formOverlayClose.addEventListener('click', () => {
                 formOverlay.style.display = 'none';
+                document.body.style.overflow = '';
+                document.body.style.paddingRight = 0;
             });
 
         });
