@@ -1588,7 +1588,7 @@ header {
   color: #f9b43b;
 }
 .team__item--active .team__item-info {
-  max-height: 12.5rem;
+  max-height: 15.625rem;
 }
 .team__item--active .team__item-decor {
   margin-top: 0.625rem;
@@ -1614,7 +1614,7 @@ header {
 }
 @media screen and (max-width: 480px) {
   .team__item-name {
-    font-style: 1.1875rem;
+    font-size: 1.1875rem;
   }
 }
 
@@ -1627,8 +1627,8 @@ header {
 }
 
 .team__item-img {
-  width: 100px;
-  height: 101px;
+  width: 6.25rem;
+  height: 6.3125rem;
   margin-right: 1.3125rem;
 }
 @media screen and (max-width: 768px) {

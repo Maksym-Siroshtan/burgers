@@ -62,7 +62,7 @@
         }
 
         .team__item-info {
-            max-height: rem(200px);
+            max-height: rem(250px);
         }
 
         .team__item-decor {
@@ -87,7 +87,7 @@
     font-size: rem(25px);
     margin-bottom: rem(17px);
     @include phones-xl {
-        font-style: rem(19px);
+        font-size: rem(19px);
     }
 }
 
@@ -100,8 +100,8 @@
 }
 
 .team__item-img {
-    width: 100px;
-    height: 101px;
+    width: rem(100px);
+    height: rem(101px);
     margin-right: rem(21px);
 
     @include tablets {
