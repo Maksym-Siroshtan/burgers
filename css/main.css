@@ -1612,6 +1612,11 @@ header {
   font-size: 1.5625rem;
   margin-bottom: 1.0625rem;
 }
+@media screen and (max-width: 480px) {
+  .team__item-name {
+    font-style: 1.1875rem;
+  }
+}
 
 .team__item-decor {
   margin: 0.9375rem 0.625rem 0;
