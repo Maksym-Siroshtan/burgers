@@ -1,0 +1,21 @@
+.how-we-are-working {
+    background: url("../img/bg_working.jpg") center center /cover no-repeat;
+}
+
+.how-we-are-working__title {
+    margin-bottom: 3.8125rem;
+    text-align: center;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player__splash {
+    background: url("../img/bg_player.png") center center /cover no-repeat;
+    width: 720px;
+    height: 407px;
+    background-color: #000000;
+}

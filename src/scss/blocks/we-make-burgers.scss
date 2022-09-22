@@ -1,0 +1,43 @@
+.we-make-burgers {
+    background: url('../img/bg_we_make_burgers.jpg') center center / cover no-repeat;
+    position: relative;
+}
+
+.we-make-burgers__container {
+    height: 100%;
+}
+
+.we-make-burgers__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: .7;
+    
+    @include tablets {
+        flex-wrap: wrap;
+    }
+
+    @include phones-l {
+        flex: 0.9;
+    }
+}
+
+.we-make-burgers__image-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.we-make-burgers__desc {
+    padding-top: 4.1875rem;
+    padding-left: 1rem;
+
+    @include tablets {
+        padding: 0 4.375rem;
+        text-align: center;
+    }
+}
+
+.we-make-burgers__title {
+    margin-bottom: 1.875rem;
+}

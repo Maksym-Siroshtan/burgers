@@ -1,0 +1,40 @@
+.btn {
+    font-size: 0.8125rem;
+    padding: 0.5rem 1rem;
+    background: $orange;
+    color: $white;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    transition: .3s;
+
+    &:hover {
+        background-color: darken($orange, 20%);
+    }
+}
+
+.btn--slider {
+    margin-left: 1.8125rem;
+}
+
+.btn--bg-black {
+    background: $black;
+
+    &:hover {
+        background-color: lighten($black, 20%);
+    }
+}
+
+.btn--form {
+    margin-right: 0.625rem;
+}
+
+.btn-clear {
+    color : $white;
+    font-size: 0.875rem;
+    font-weight: 300;
+    background: none;
+
+    &:hover {
+        color: darken($yellow, 20%);
+    }
+}

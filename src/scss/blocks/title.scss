@@ -1,0 +1,34 @@
+.title {
+    font-size: 4.5rem;
+    font-weight: 400;
+    color: $yellow;
+    @include setFontStyleGagalin();
+    line-height: 1;
+
+    @include phones-xl {
+        font-size: 3.25rem;
+    }
+
+    &--color {
+
+        &-black {
+            color: $black;
+        }
+    
+        &-white {
+            color: $white;
+        }
+    }
+}
+
+.subtitle {
+    @include setFontStyleLifehack;
+    font-size: 4.0625rem;
+    color: $white;
+    line-height: 1;
+    letter-spacing: -0.025em;
+
+    @include phones-xl {
+        font-size: 3.4375rem;
+    }
+}

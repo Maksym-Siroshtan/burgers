@@ -1,0 +1,190 @@
+.form {
+    font-size: 0.875rem;
+
+    @include tablets {
+        padding: 0 7.1875rem;
+    }
+
+    @media screen and (max-width:560px) {
+        padding: 0;
+    }
+}
+
+.form__elem {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.form__column {
+    flex: 1;
+    margin-right: 1.3125rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        margin-bottom: 0.9375rem;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    @include phones-xl {
+      margin-right: 0;
+    }
+}
+
+.form__row {
+    display: flex;
+    margin-bottom: 1.1875rem;
+
+    &--radio {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include  phones-xl {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.form__block {
+    flex: 1;
+    margin-right: 1.25rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &--width {
+        flex:1;
+    }
+
+    &--textarea {
+        margin-right: 0;
+    }
+  
+    &--remove-margin-right {
+        @include phones-xl {
+            margin-right: 0;
+        }
+    }
+
+    &--disappears {
+        @include phones-xl {
+            display: none;
+        }
+    }
+}
+
+.form__buttons {
+
+    @include phones-xl {
+        text-align: center;
+    }
+}
+
+.form__buttons-radio {
+    margin-right: 1.1875rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.form__input {
+    background: $white;
+    border-radius: 0.3125rem;
+    border: none;
+    padding: 0.625rem 1.3125rem;
+    width: 100%;
+
+    &--textarea {
+        height: 7rem;
+        resize: none;
+        margin-bottom: 0.9375rem;
+
+        @include tablets {
+            margin-bottom: 0.625rem;
+        }
+    }
+}
+
+.form__radio, .form__checkbox {
+    display: none;
+}
+
+.form__radio:checked ~ .form__visible::before, 
+.form__checkbox:checked ~ .form__visible::before {
+    opacity: 1;
+}
+
+.form__visible {
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    position: relative;
+    margin-right: 0.5625rem;
+    background-color: $white;
+
+    &::before {
+        content: "\2714";
+        top: 0;
+        left: 0.125rem;
+        opacity: 0;
+        width: 0.4375rem;
+        height: 0.4375rem;
+        position: absolute;
+        color: $red;
+    }   
+}
+
+.form__visible--radio {
+    border-radius: 50%;
+
+    &::before {
+        content: "";
+        top: 0.25rem;
+        left: 0.25rem;
+        opacity: 0;
+        width: 0.4375rem;
+        height: 0.4375rem;
+        border-radius: 50%;
+        position: absolute;
+        background: $red;
+   }
+}
+
+.form__overlay-modal {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 30%;
+    border-radius: 0.3125rem;
+    background-color: $white;
+    box-shadow: 0px 0px 2.5rem 0px rgba(0,0,1,0.5);
+    padding: 1.25rem 0;
+}
+
+.form__overlay-text {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    color: $black;
+    margin-bottom: 1.0625rem;
+}
+
+.form__error {
+    color: $red;
+}

@@ -1,0 +1,93 @@
+.menu {
+    background: url('../img/bg_menu.jpg') center center / cover no-repeat;
+    color: $white;
+    position: relative;
+}
+
+.menu__title {
+    position: absolute;
+    top: 6.9375rem;
+    left: 5.875rem;
+
+    @include phones-xl {
+        left: 2.5rem;
+    }
+}
+
+.menu__list {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.menu__item {
+    display: flex;
+    height: 100%;
+    z-index: $z-acco;
+    
+    &--active {
+
+        .menu__link-subtitle {
+            color: $yellow;
+        }
+
+        .menu__content {
+            width: 34.375rem;
+            opacity: 1;
+            @include tablets {
+                width: 100%;
+            }
+        }
+
+        .menu__text {
+            display: block;
+        }
+    }
+}
+
+.menu__link {
+    display: inline-block;
+    writing-mode: vertical-lr;
+    color: inherit;
+    height: 100%;
+    text-decoration: none;
+    background: url('../img/bg_menu_1.png') center center / cover no-repeat;
+
+    &--vegan {
+        background: url('../img/bg_menu_2.png') center center / cover no-repeat;
+    }
+
+    &--diets {
+        background: url('../img/bg_menu_3.png') center center / cover no-repeat;
+    }
+}
+
+.menu__link-subtitle {
+    display: block;
+    transform: rotate(180deg);
+    @include setFontStyleGagalin;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: 400;
+    padding: 2.5rem 0.5rem 0;
+
+    @include phones-xl {
+        line-height: 1.25rem;
+        padding: 2.5rem 0.9375rem 0;
+    }
+}
+
+.menu__content {
+    width: 0;
+    opacity: 0;
+    height: 100%;
+    background-color: rgba(20,20,20,0.7);
+    overflow: hidden;
+    transition: opacity .5s ease-in;
+}
+
+.menu__text {
+    display: none;
+    font-weight: 300;
+    padding: 3.875rem 2.3125rem 0 2.0625rem;
+}
