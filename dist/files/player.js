@@ -5,8 +5,8 @@ function onYouTubeIframeAPIReady() {
     width: "640",
     videoId: "B4hXrYHFomY",
     events: {
-      //onReady: onPlayerReady,
-      //onStateChange: onPlayerStateChange,
+      onReady: onPlayerReady,
+      onStateChange: onPlayerStateChange,
     },
   });
 }

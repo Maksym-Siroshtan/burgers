@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: Gagalin-Regular;
   font-display: swap;
@@ -6,6 +7,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: Lifehack-Medium;
   font-display: swap;
@@ -13,6 +15,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: Ubuntu;
   font-display: swap;
@@ -20,6 +23,7 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: Ubuntu;
   font-display: swap;
@@ -27,6 +31,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: Ubuntu;
   font-display: swap;
@@ -34,23 +39,31 @@
   font-weight: bold;
   font-style: normal;
 }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
 /* Document
    ========================================================================== */
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /* Sections
    ========================================================================== */
+
 /**
  * Remove the margin in all browsers.
  */
+
 body {
   margin: 0;
 }
@@ -58,6 +71,7 @@ body {
 /**
  * Render the `main` element consistently in IE.
  */
+
 main {
   display: block;
 }
@@ -66,6 +80,7 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -73,30 +88,40 @@ h1 {
 
 /* Grouping content
    ========================================================================== */
+
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
+
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /* Text-level semantics
    ========================================================================== */
+
 /**
  * Remove the gray background on active links in IE 10.
  */
+
 a {
   background-color: transparent;
 }
@@ -105,15 +130,21 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
+
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
 }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
+
 b,
 strong {
   font-weight: bolder;
@@ -123,16 +154,20 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
  * Add the correct font size in all browsers.
  */
+
 small {
   font-size: 80%;
 }
@@ -141,6 +176,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
+
 sub,
 sup {
   font-size: 75%;
@@ -159,36 +195,46 @@ sup {
 
 /* Embedded content
    ========================================================================== */
+
 /**
  * Remove the border on images inside links in IE 10.
  */
+
 img {
   border-style: none;
 }
 
 /* Forms
    ========================================================================== */
+
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
+
 button,
 input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
 }
 
 /**
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
+
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -196,14 +242,17 @@ input { /* 1 */
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
+
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
+
 button,
 [type=button],
 [type=reset],
@@ -214,6 +263,7 @@ button,
 /**
  * Remove the inner border and padding in Firefox.
  */
+
 button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
@@ -225,6 +275,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
+
 button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
@@ -235,6 +286,7 @@ button:-moz-focusring,
 /**
  * Correct the padding in Firefox.
  */
+
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -245,18 +297,26 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
+
 legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
+
 progress {
   vertical-align: baseline;
 }
@@ -264,6 +324,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
+
 textarea {
   overflow: auto;
 }
@@ -272,15 +333,19 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
+
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
+
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {
   height: auto;
@@ -290,14 +355,18 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
+
 [type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: rem(-2px); /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: rem(-2px);
+  /* 2 */
 }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
+
 [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -306,16 +375,21 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
+
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /* Interactive
    ========================================================================== */
+
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
+
 details {
   display: block;
 }
@@ -323,15 +397,18 @@ details {
 /*
  * Add the correct display in all browsers.
  */
+
 summary {
   display: list-item;
 }
 
 /* Misc
    ========================================================================== */
+
 /**
  * Add the correct display in IE 10+.
  */
+
 template {
   display: none;
 }
@@ -339,6 +416,7 @@ template {
 /**
  * Add the correct display in IE 10.
  */
+
 [hidden] {
   display: none;
 }
@@ -346,18 +424,9 @@ template {
 html {
   font-size: 16px;
 }
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 14px;
-  }
-}
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -381,6 +450,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .container--row {
   flex-direction: row;
 }
@@ -401,7 +471,12 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   font-weight: normal;
 }
@@ -415,6 +490,7 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 ul li {
   list-style: none;
 }
@@ -454,32 +530,43 @@ img {
   opacity: 0.7;
   text-decoration: none;
 }
-.close::after, .close::before {
+
+.close::after,
+.close::before {
   content: " ";
   position: absolute;
   background-color: #ffffff;
   width: 1.25rem;
   height: 0.25rem;
 }
+
 .close::after {
   transform: rotate(45deg);
 }
+
 .close::before {
   transform: rotate(-45deg);
 }
+
 .close--slider-pop-up {
   top: 1.875rem;
   right: 2.1875rem;
 }
-.close--slider-pop-up::after, .close--slider-pop-up::before {
-  background-color: #e35028;
-}
-.close--reviews-close::after, .close--reviews-close::before {
+
+.close--slider-pop-up::after,
+.close--slider-pop-up::before {
   background-color: #e35028;
 }
 
+.close--reviews-close::after,
+.close--reviews-close::before {
+  background-color: #e35028;
+}
+
+.no-webp .we-make-burgers{
+  background: url("../img/bg_we_make_burgers.jpg") center center/cover no-repeat; }
+
 .we-make-burgers {
-  background: url("../img/bg_we_make_burgers.jpg") center center/cover no-repeat;
   position: relative;
 }
 
@@ -493,32 +580,17 @@ img {
   justify-content: center;
   flex: 0.7;
 }
-@media screen and (max-width: 768px) {
-  .we-make-burgers__content {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 450px) {
-  .we-make-burgers__content {
-    flex: 0.9;
-  }
-}
 
 .we-make-burgers__image-pic {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .we-make-burgers__desc {
   padding-top: 4.1875rem;
   padding-left: 1rem;
-}
-@media screen and (max-width: 768px) {
-  .we-make-burgers__desc {
-    padding: 0 4.375rem;
-    text-align: center;
-  }
 }
 
 .we-make-burgers__title {
@@ -530,17 +602,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding-top: 0.75rem;
-}
-@media screen and (max-width: 768px) {
-  header {
-    position: absolute;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 450px) {
-  header {
-    padding-top: 0;
-  }
 }
 
 .header__links {
@@ -558,11 +619,6 @@ header {
   margin-right: 0.625rem;
   color: #ffffff;
 }
-@media screen and (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-}
 
 .nav__list {
   display: flex;
@@ -574,6 +630,7 @@ header {
   position: relative;
   margin-right: 1.875rem;
 }
+
 .nav__item::before {
   content: "";
   position: absolute;
@@ -585,9 +642,11 @@ header {
   top: 0.625rem;
   transition: 0.3s;
 }
+
 .nav__item:first-child::before {
   content: none;
 }
+
 .nav__item:last-child {
   margin-right: 0;
 }
@@ -600,6 +659,7 @@ header {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .nav__link:hover {
   color: #c88206;
 }
@@ -613,6 +673,7 @@ header {
   text-transform: uppercase;
   transition: 0.3s;
 }
+
 .btn:hover {
   background-color: #932e13;
 }
@@ -624,6 +685,7 @@ header {
 .btn--bg-black {
   background: #2f3234;
 }
+
 .btn--bg-black:hover {
   background-color: #5f666a;
 }
@@ -638,6 +700,7 @@ header {
   font-weight: 300;
   background: none;
 }
+
 .btn-clear:hover {
   color: #c88206;
 }
@@ -649,14 +712,11 @@ header {
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
   line-height: 1;
 }
-@media screen and (max-width: 480px) {
-  .title {
-    font-size: 3.25rem;
-  }
-}
+
 .title--color-black {
   color: #2f3234;
 }
+
 .title--color-white {
   color: #ffffff;
 }
@@ -667,11 +727,6 @@ header {
   color: #ffffff;
   line-height: 1;
   letter-spacing: -0.025em;
-}
-@media screen and (max-width: 480px) {
-  .subtitle {
-    font-size: 3.4375rem;
-  }
 }
 
 .arrow-scroll-down {
@@ -691,57 +746,26 @@ header {
   height: 0.875rem;
 }
 
-.best {
-  background: url("../img/bg_best.jpg") center center/cover no-repeat;
-}
+.no-webp .best{
+  background: url("../img/bg_best.jpg") center center/cover no-repeat; }
 
 .best__list {
   display: flex;
   align-items: flex-start;
-}
-@media screen and (max-width: 480px) {
-  .best__list {
-    flex-direction: column;
-    padding: 0 1.875rem;
-  }
-}
-@media screen and (max-width: 450px) {
-  .best__list {
-    padding: 0;
-  }
 }
 
 .best__item {
   text-align: center;
   flex: 1;
 }
-@media screen and (max-width: 480px) {
-  .best__item {
-    display: flex;
-    text-align: left;
-    align-items: center;
-    margin-bottom: 0.9375rem;
-  }
-}
 
 .best__title {
   margin-bottom: 3.125rem;
   text-align: center;
 }
-@media screen and (max-width: 480px) {
-  .best__title {
-    margin-bottom: 1.25rem;
-  }
-}
 
 .best__item-img {
   margin-bottom: 1.25rem;
-}
-@media screen and (max-width: 480px) {
-  .best__item-img {
-    margin-bottom: 0;
-    margin-right: 1.875rem;
-  }
 }
 
 .best__item-img-symbol {
@@ -778,29 +802,13 @@ header {
 .slider__arrow {
   margin: auto;
 }
-@media screen and (max-width: 450px) {
-  .slider__arrow {
-    position: absolute;
-    bottom: 50%;
-    padding: 0;
-    z-index: 10;
-  }
-}
+
 .slider__arrow--left {
   transform: rotate(90deg);
 }
-@media screen and (max-width: 450px) {
-  .slider__arrow--left {
-    left: 0;
-  }
-}
+
 .slider__arrow--right {
   transform: rotate(-90deg);
-}
-@media screen and (max-width: 450px) {
-  .slider__arrow--right {
-    right: 0;
-  }
 }
 
 .slider__list {
@@ -809,44 +817,19 @@ header {
   align-items: center;
   padding: 0 0.75rem;
 }
-@media screen and (max-width: 450px) {
-  .slider__list {
-    padding: 0;
-  }
-}
 
 .slider__item {
   left: 0;
   display: none;
   align-items: center;
 }
+
 .slider__item--active {
   display: flex;
-}
-@media screen and (max-width: 1000px) {
-  .slider__item {
-    flex-direction: column;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .slider__item {
-    padding: 0 0.625rem;
-  }
-}
-@media screen and (max-width: 450px) {
-  .slider__item {
-    padding: 0;
-  }
 }
 
 .slider__left {
   margin-right: 0.9375rem;
-}
-@media screen and (max-width: 768px) {
-  .slider__left {
-    position: relative;
-  }
 }
 
 .slider__left,
@@ -856,24 +839,6 @@ header {
 
 .slider__right {
   width: 28.3125rem;
-}
-@media screen and (max-width: 1000px) {
-  .slider__right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 768px) {
-  .slider__right {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 480px) {
-  .slider__right {
-    width: auto;
-  }
 }
 
 .slider__compound {
@@ -887,6 +852,7 @@ header {
   background-color: rgba(227, 80, 40, 0.4);
   border-radius: 5px;
 }
+
 .slider__compound:hover .slider__pop-up {
   display: flex;
 }
@@ -902,6 +868,7 @@ header {
   line-height: 1.75rem;
   font-weight: 400;
 }
+
 .slider__text--kkal {
   padding-left: 0.9375rem;
 }
@@ -918,11 +885,6 @@ header {
   height: 20.75rem;
   opacity: 0.9;
   display: none;
-}
-@media screen and (max-width: 768px) {
-  .slider__pop-up {
-    left: -0.8125rem;
-  }
 }
 
 .slider__pop-up-list {
@@ -949,6 +911,7 @@ header {
   color: #2f3234;
   flex: 1;
 }
+
 .slider__pop-up-Ingredients--weight {
   font-weight: 300;
 }
@@ -959,21 +922,9 @@ header {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 450px) {
-  .slider__image {
-    width: auto;
-  }
-}
 
 .slider__calories {
   opacity: 0.5;
-}
-@media screen and (max-width: 768px) {
-  .slider__calories {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
 }
 
 .slider__calories-pic {
@@ -999,11 +950,6 @@ header {
   display: flex;
   align-items: baseline;
 }
-@media screen and (max-width: 768px) {
-  .slider__order {
-    justify-content: center;
-  }
-}
 
 .slider__price {
   font-family: "Gagalin-Regular", Helvetica, sans-serif;
@@ -1013,6 +959,7 @@ header {
   letter-spacing: -0.025em;
   color: #e35028;
 }
+
 .slider__price--currency {
   font-size: 1.875rem;
 }
@@ -1034,20 +981,16 @@ header {
   color: #ffffff;
   filter: grayscale(100%);
 }
+
 .reviews__item:hover .reviews__desc {
   opacity: 1;
-}
-@media screen and (max-width: 768px) {
-  .reviews__item {
-    width: 50%;
-    height: 25%;
-  }
 }
 
 .reviews__picture {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .reviews__desc {
@@ -1061,16 +1004,6 @@ header {
   transition: 0.5s;
   background-color: rgba(20, 20, 20, 0.7);
 }
-@media screen and (max-width: 768px) {
-  .reviews__desc {
-    padding: 3.4375rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-}
 
 .reviews__title {
   margin-bottom: 1.875rem;
@@ -1083,11 +1016,6 @@ header {
   margin-bottom: 1.0625rem;
   font-size: 0.875rem;
   font-weight: 300;
-}
-@media screen and (max-width: 480px) {
-  .reviews__text {
-    display: none;
-  }
 }
 
 .reviews__overlay-modal {
@@ -1116,9 +1044,11 @@ header {
   font-weight: 300;
 }
 
+.no-webp .order{
+  background: url("../img/bg_order.jpg") center center/cover no-repeat; }
+
 .order {
   position: relative;
-  background: url("../img/bg_order.jpg") center center/cover no-repeat;
   color: #ffffff;
 }
 
@@ -1130,97 +1060,55 @@ header {
 .form {
   font-size: 0.875rem;
 }
-@media screen and (max-width: 768px) {
-  .form {
-    padding: 0 7.1875rem;
-  }
-}
-@media screen and (max-width: 560px) {
-  .form {
-    padding: 0;
-  }
-}
 
 .form__elem {
   display: flex;
-}
-@media screen and (max-width: 768px) {
-  .form__elem {
-    flex-direction: column;
-  }
 }
 
 .form__column {
   flex: 1;
   margin-right: 1.3125rem;
 }
+
 .form__column:last-child {
   margin-right: 0;
-}
-@media screen and (max-width: 768px) {
-  .form__column {
-    margin-bottom: 0.9375rem;
-    margin-right: 0;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .form__column {
-    margin-right: 0;
-  }
 }
 
 .form__row {
   display: flex;
   margin-bottom: 1.1875rem;
 }
+
 .form__row--radio {
   margin-bottom: 1rem;
   margin-right: 0;
 }
+
 .form__row:last-child {
   margin-bottom: 0;
-}
-@media screen and (max-width: 480px) {
-  .form__row {
-    justify-content: center;
-    width: 100%;
-  }
 }
 
 .form__block {
   flex: 1;
   margin-right: 1.25rem;
 }
+
 .form__block:last-child {
   margin-right: 0;
 }
+
 .form__block--width {
   flex: 1;
 }
+
 .form__block--textarea {
   margin-right: 0;
-}
-@media screen and (max-width: 480px) {
-  .form__block--remove-margin-right {
-    margin-right: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .form__block--disappears {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .form__buttons {
-    text-align: center;
-  }
 }
 
 .form__buttons-radio {
   margin-right: 1.1875rem;
 }
+
 .form__buttons-radio:last-child {
   margin-right: 0;
 }
@@ -1232,18 +1120,15 @@ header {
   padding: 0.625rem 1.3125rem;
   width: 100%;
 }
+
 .form__input--textarea {
   height: 7rem;
   resize: none;
   margin-bottom: 0.9375rem;
 }
-@media screen and (max-width: 768px) {
-  .form__input--textarea {
-    margin-bottom: 0.625rem;
-  }
-}
 
-.form__radio, .form__checkbox {
+.form__radio,
+.form__checkbox {
   display: none;
 }
 
@@ -1261,6 +1146,7 @@ header {
   margin-right: 0.5625rem;
   background-color: #ffffff;
 }
+
 .form__visible::before {
   content: "✔";
   top: 0;
@@ -1275,6 +1161,7 @@ header {
 .form__visible--radio {
   border-radius: 50%;
 }
+
 .form__visible--radio::before {
   content: "";
   top: 0.25rem;
@@ -1327,8 +1214,10 @@ header {
   left: 1.5rem;
 }
 
+.no-webp .team{
+  background: url("../img/bg_team.jpg") center center/cover no-repeat; }
+
 .team {
-  background: url("../img/bg_team.jpg") center center/cover no-repeat;
   position: relative;
 }
 
@@ -1344,21 +1233,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
-  .team-block__right {
-    left: 0;
-  }
-}
 
 .team__desc {
   position: absolute;
   top: 20%;
-}
-@media screen and (max-width: 768px) {
-  .team__desc {
-    text-align: center;
-    padding: 0 15.9375rem;
-  }
 }
 
 .team__title {
@@ -1371,11 +1249,6 @@ header {
   overflow: hidden;
   transition: max-height 0.5s ease-in;
 }
-@media screen and (max-width: 768px) {
-  .team__item-info {
-    flex-direction: column;
-  }
-}
 
 .team__item {
   margin-bottom: 2.1875rem;
@@ -1384,15 +1257,19 @@ header {
   color: #ffffff;
   font-size: 0.8812rem;
 }
+
 .team__item:last-child {
   margin-bottom: 0;
 }
+
 .team__item--active .team__item-name {
   color: #f9b43b;
 }
+
 .team__item--active .team__item-info {
   max-height: 15.625rem;
 }
+
 .team__item--active .team__item-decor {
   margin-top: 0.625rem;
   width: 0;
@@ -1413,11 +1290,6 @@ header {
   font-size: 1.5625rem;
   margin-bottom: 1.0625rem;
 }
-@media screen and (max-width: 480px) {
-  .team__item-name {
-    font-size: 1.1875rem;
-  }
-}
 
 .team__item-decor {
   margin: 0.9375rem 0.625rem 0;
@@ -1432,16 +1304,12 @@ header {
   height: 6.3125rem;
   margin-right: 1.3125rem;
 }
-@media screen and (max-width: 768px) {
-  .team__item-img {
-    margin: 0 auto;
-  }
-}
 
 .team__item-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .team__item-profession {
@@ -1454,9 +1322,8 @@ header {
   font-weight: 300;
 }
 
-.how-we-are-working {
-  background: url("../img/bg_working.jpg") center center/cover no-repeat;
-}
+.no-webp .how-we-are-working{
+  background: url("../img/bg_working.jpg") center center/cover no-repeat; }
 
 .how-we-are-working__title {
   margin-bottom: 3.8125rem;
@@ -1469,15 +1336,19 @@ header {
   align-items: center;
 }
 
+.no-webp .player__splash{
+  background: url("../img/bg_player.png") center center/cover no-repeat; }
+
 .player__splash {
-  background: url("../img/bg_player.png") center center/cover no-repeat;
   width: 720px;
   height: 407px;
   background-color: #000000;
 }
 
+.no-webp .menu{
+  background: url("../img/bg_menu.jpg") center center/cover no-repeat; }
+
 .menu {
-  background: url("../img/bg_menu.jpg") center center/cover no-repeat;
   color: #ffffff;
   position: relative;
 }
@@ -1486,11 +1357,6 @@ header {
   position: absolute;
   top: 6.9375rem;
   left: 5.875rem;
-}
-@media screen and (max-width: 480px) {
-  .menu__title {
-    left: 2.5rem;
-  }
 }
 
 .menu__list {
@@ -1504,21 +1370,22 @@ header {
   height: 100%;
   z-index: 10;
 }
+
 .menu__item--active .menu__link-subtitle {
   color: #f9b43b;
 }
+
 .menu__item--active .menu__content {
   width: 34.375rem;
   opacity: 1;
 }
-@media screen and (max-width: 768px) {
-  .menu__item--active .menu__content {
-    width: 100%;
-  }
-}
+
 .menu__item--active .menu__text {
   display: block;
 }
+
+.no-webp .menu__link{
+  background: url("../img/bg_menu_1.png") center center/cover no-repeat; }
 
 .menu__link {
   display: inline-block;
@@ -1526,14 +1393,13 @@ header {
   color: inherit;
   height: 100%;
   text-decoration: none;
-  background: url("../img/bg_menu_1.png") center center/cover no-repeat;
 }
-.menu__link--vegan {
-  background: url("../img/bg_menu_2.png") center center/cover no-repeat;
-}
-.menu__link--diets {
-  background: url("../img/bg_menu_3.png") center center/cover no-repeat;
-}
+
+.no-webp .menu__link--vegan{
+  background: url("../img/bg_menu_2.png") center center/cover no-repeat; }
+
+.no-webp .menu__link--diets{
+  background: url("../img/bg_menu_3.png") center center/cover no-repeat; }
 
 .menu__link-subtitle {
   display: block;
@@ -1543,12 +1409,6 @@ header {
   line-height: 4rem;
   font-weight: 400;
   padding: 2.5rem 0.5rem 0;
-}
-@media screen and (max-width: 480px) {
-  .menu__link-subtitle {
-    line-height: 1.25rem;
-    padding: 2.5rem 0.9375rem 0;
-  }
 }
 
 .menu__content {
@@ -1566,8 +1426,10 @@ header {
   padding: 3.875rem 2.3125rem 0 2.0625rem;
 }
 
+.no-webp .about{
+  background: url("../img/bg_map.jpg") center center/cover no-repeat; }
+
 .about {
-  background: url("../img/bg_map.jpg") center center/cover no-repeat;
   position: relative;
   font-size: 0.875rem;
 }
@@ -1579,22 +1441,11 @@ header {
   padding: 0.625rem 0;
   width: 100%;
 }
+
 .footer--container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-@media screen and (max-width: 480px) {
-  .footer--container {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contacts {
-    text-align: center;
-    margin-bottom: 0.625rem;
-  }
 }
 
 .contacts p {
@@ -1602,7 +1453,8 @@ header {
   color: #ffffff;
 }
 
-.contacts__icon, .contacts__phone {
+.contacts__icon,
+.contacts__phone {
   display: inline-block;
   vertical-align: middle;
 }
@@ -1630,6 +1482,7 @@ header {
   margin-right: 1.25rem;
   transition: 0.3s;
 }
+
 .messenger__item:last-child {
   margin-right: 0;
 }
@@ -1637,6 +1490,7 @@ header {
 .messenger__link {
   display: inline-block;
 }
+
 .messenger__link :hover {
   opacity: 1;
   background: #2f3234;
@@ -1655,16 +1509,12 @@ header {
   right: 4.4375rem;
   z-index: 100;
 }
-@media screen and (max-width: 768px) {
-  .fixed-menu {
-    display: none;
-  }
-}
 
 .fixed-menu__item:hover .fixed-menu__link {
   border-color: #ffffff;
   transition: 0.3s;
 }
+
 .fixed-menu__item.active .fixed-menu__link {
   border-color: #e45028;
 }
@@ -1678,6 +1528,7 @@ header {
   position: relative;
   cursor: pointer;
 }
+
 .fixed-menu__link::before {
   content: "";
   background: #ffffff;
@@ -1689,6 +1540,7 @@ header {
   transform: translate(-50%, -50%);
   position: absolute;
 }
+
 .fixed-menu__link:last-child {
   margin-bottom: 0;
 }
@@ -1700,13 +1552,10 @@ header {
   margin-left: 1.25rem;
   display: none;
 }
-@media screen and (max-width: 768px) {
-  .burger-menu-link {
-    display: flex;
-  }
-}
 
-.burger-menu-link__design, .burger-menu-link__design::before, .burger-menu-link__design:after {
+.burger-menu-link__design,
+.burger-menu-link__design::before,
+.burger-menu-link__design:after {
   content: "";
   display: block;
   width: 1.6875rem;
@@ -1714,15 +1563,19 @@ header {
   background: #ffffff;
   border-radius: 0.3125rem;
 }
-.burger-menu-link__design::before, .burger-menu-link__design:after {
+
+.burger-menu-link__design::before,
+.burger-menu-link__design:after {
   content: "";
   display: block;
   position: absolute;
 }
+
 .burger-menu-link__design:after {
   top: 100%;
   margin-top: 0.3125rem;
 }
+
 .burger-menu-link__design::before {
   bottom: 100%;
   margin-bottom: 0.3125rem;
@@ -1758,9 +1611,11 @@ header {
   margin-bottom: 1.875rem;
   text-align: center;
 }
+
 .burger__pop-up-item:last-child {
   margin-bottom: 0;
 }
+
 .burger__pop-up-item::before {
   content: "";
   position: absolute;
@@ -1771,6 +1626,7 @@ header {
   top: 3.125rem;
   left: 50%;
 }
+
 .burger__pop-up-item:last-child::before {
   content: none;
 }
@@ -1794,3 +1650,283 @@ header {
   opacity: 0.92;
   background-color: #2f3234;
 }
+
+@media screen and (max-width: 1000px) {
+  .slider__item {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .slider__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .we-make-burgers__content {
+    flex-wrap: wrap;
+  }
+
+  .we-make-burgers__desc {
+    padding: 0 4.375rem;
+    text-align: center;
+  }
+
+  header {
+    position: absolute;
+    width: 100%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .slider__left {
+    position: relative;
+  }
+
+  .slider__right {
+    text-align: center;
+  }
+
+  .slider__pop-up {
+    left: -0.8125rem;
+  }
+
+  .slider__calories {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .slider__order {
+    justify-content: center;
+  }
+
+  .reviews__item {
+    width: 50%;
+    height: 25%;
+  }
+
+  .reviews__desc {
+    padding: 3.4375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .form {
+    padding: 0 7.1875rem;
+  }
+
+  .form__elem {
+    flex-direction: column;
+  }
+
+  .form__column {
+    margin-bottom: 0.9375rem;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .form__input--textarea {
+    margin-bottom: 0.625rem;
+  }
+
+  .team-block__right {
+    left: 0;
+  }
+
+  .team__desc {
+    text-align: center;
+    padding: 0 15.9375rem;
+  }
+
+  .team__item-info {
+    flex-direction: column;
+  }
+
+  .team__item-img {
+    margin: 0 auto;
+  }
+
+  .menu__item--active .menu__content {
+    width: 100%;
+  }
+
+  .fixed-menu {
+    display: none;
+  }
+
+  .burger-menu-link {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .form {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 3.25rem;
+  }
+
+  .subtitle {
+    font-size: 3.4375rem;
+  }
+
+  .best__list {
+    flex-direction: column;
+    padding: 0 1.875rem;
+  }
+
+  .best__item {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 0.9375rem;
+  }
+
+  .best__title {
+    margin-bottom: 1.25rem;
+  }
+
+  .best__item-img {
+    margin-bottom: 0;
+    margin-right: 1.875rem;
+  }
+
+  .slider__item {
+    padding: 0 0.625rem;
+  }
+
+  .slider__right {
+    width: auto;
+  }
+
+  .reviews__text {
+    display: none;
+  }
+
+  .form__column {
+    margin-right: 0;
+  }
+
+  .form__row {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form__block--remove-margin-right {
+    margin-right: 0;
+  }
+
+  .form__block--disappears {
+    display: none;
+  }
+
+  .form__buttons {
+    text-align: center;
+  }
+
+  .team__item-name {
+    font-size: 1.1875rem;
+  }
+
+  .menu__title {
+    left: 2.5rem;
+  }
+
+  .menu__link-subtitle {
+    line-height: 1.25rem;
+    padding: 2.5rem 0.9375rem 0;
+  }
+
+  .footer--container {
+    flex-direction: column;
+  }
+
+  .contacts {
+    text-align: center;
+    margin-bottom: 0.625rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .we-make-burgers__content {
+    flex: 0.9;
+  }
+
+  header {
+    padding-top: 0;
+  }
+
+  .best__list {
+    padding: 0;
+  }
+
+  .slider__arrow {
+    position: absolute;
+    bottom: 50%;
+    padding: 0;
+    z-index: 10;
+  }
+
+  .slider__arrow--left {
+    left: 0;
+  }
+
+  .slider__arrow--right {
+    right: 0;
+  }
+
+  .slider__list {
+    padding: 0;
+  }
+
+  .slider__item {
+    padding: 0;
+  }
+
+  .slider__image {
+    width: auto;
+  }
+}
+
+.webp .we-make-burgers{ background: url(../img/bg_we_make_burgers.webp) center center/cover no-repeat; }
+
+.webp .best{ background: url(../img/bg_best.webp) center center/cover no-repeat; }
+
+.webp .order{ background: url(../img/bg_order.webp) center center/cover no-repeat; }
+
+.webp .team{ background: url(../img/bg_team.webp) center center/cover no-repeat; }
+
+.webp .how-we-are-working{ background: url(../img/bg_working.webp) center center/cover no-repeat; }
+
+.webp .player__splash{ background: url(../img/bg_player.webp) center center/cover no-repeat; }
+
+.webp .menu{ background: url(../img/bg_menu.webp) center center/cover no-repeat; }
+
+.webp .menu__link{ background: url(../img/bg_menu_1.webp) center center/cover no-repeat; }
+
+.webp .menu__link--vegan{ background: url(../img/bg_menu_2.webp) center center/cover no-repeat; }
+
+.webp .menu__link--diets{ background: url(../img/bg_menu_3.webp) center center/cover no-repeat; }
+
+.webp .about{ background: url(../img/bg_map.webp) center center/cover no-repeat; }
