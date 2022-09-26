@@ -22,8 +22,8 @@ teamAccoFunction.teamAcco();
 import * as onePageScrollFunction from "./modules/one-page-scroll.js";
 onePageScrollFunction.onePageScroll();
 
-import * as playerFunction from "./modules/player.js";
-playerFunction.player();
+import * as mapFunction from "./modules/map.js";
+mapFunction.map();
 
 /*import Swiper, { Navigation, Pagination } from 'swiper';
 const swiper = new Swiper();*/

@@ -32,7 +32,7 @@
     "gulp-rename": "latest",
     "gulp-replace": "latest",
     "gulp-sass": "latest",
-    "gulp-smile-px2rem": "^0.1.0",
+    "gulp-smile-px2rem": "latest",
     "gulp-svg-sprite": "latest",
     "gulp-ttf2woff2": "latest",
     "gulp-util": "latest",
