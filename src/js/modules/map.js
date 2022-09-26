@@ -10,7 +10,7 @@ export function map() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/icons/icons.svg#map-marker",
+        iconImageHref: "../dist/img/icons/icons.svg#map-marker",
         iconImageSize: [80, 80],
         iconImageOffset: [0, 0],
       }
@@ -21,7 +21,7 @@ export function map() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/icons/icons.svg#map-marker",
+        iconImageHref: "../dist/img/icons/icons.svg#map-marker",
         iconImageSize: [80, 80],
         iconImageOffset: [0, 0],
       }
@@ -32,7 +32,7 @@ export function map() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/icons/icons.svg#map-marker",
+        iconImageHref: "../dist/img/icons/icons.svg#map-marker",
         iconImageSize: [80, 80],
         iconImageOffset: [0, 0],
       }
@@ -43,7 +43,7 @@ export function map() {
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: "../img/icons/icons.svg#map-marker",
+        iconImageHref: "../dist/img/icons/icons.svg#map-marker",
         iconImageSize: [80, 80],
         iconImageOffset: [0, 0],
       }
