@@ -29,56 +29,54 @@ const onPlayerReady = () => {
       left: `${completePersent}%`,
     });
   }, 1000);
+};
 
-  const eventsInit = () => {
-    $(".player__start").on("click", (e) => {
-      e.preventDefault();
+const eventsInit = () => {
+  $(".player__start").on("click", (e) => {
+    e.preventDefault();
 
-      const btn = $(e.currentTarget);
+    const btn = $(e.currentTarget);
 
-      if (btn.hasClass("paused")) {
-        player.pauseVideo();
-      } else {
-        player.playVideo();
-      }
-    });
-
-    $(".player__playback").on("click", (e) => {
-      const progressBar = $(e.currentTarget);
-      const newPositionBar = e.pageX - progressBar.offset().left;
-      const positionBarPercent = (newPositionBar / progressBar.width()) * 100;
-      const newPlayerTimeSec =
-        (player.getDuration() / 100) * positionBarPercent;
-
-      $(".player__playback-button").css({
-        left: `${positionBarPercent}%`,
-      });
-
-      player.seekTo(newPlayerTimeSec);
-    });
-
-    $(".player__splash").on("click", () => {
+    if (btn.hasClass("paused")) {
+      player.pauseVideo();
+    } else {
       player.playVideo();
+    }
+  });
+
+  $(".player__playback").on("click", (e) => {
+    const progressBar = $(e.currentTarget);
+    const newPositionBar = e.pageX - progressBar.offset().left;
+    const positionBarPercent = (newPositionBar / progressBar.width()) * 100;
+    const newPlayerTimeSec = (player.getDuration() / 100) * positionBarPercent;
+
+    $(".player__playback-button").css({
+      left: `${positionBarPercent}%`,
     });
 
-    $(".player__volume").on("click", function (e) {
-      const volume = $(e.currentTarget);
+    player.seekTo(newPlayerTimeSec);
+  });
 
-      if (volume.hasClass("active")) {
-        player.mute();
-        volume.removeClass("active");
-      } else {
-        player.unMute();
-        volume.addClass("active");
-      }
-    });
+  $(".player__splash").on("click", () => {
+    player.playVideo();
+  });
 
-    /*$("#volume").on("input", function () {
-      const v = this.value;
-      console.log(v);
-    });*/
-  };
-  eventsInit();
+  $(".player__volume").on("click", function (e) {
+    const volume = $(e.currentTarget);
+
+    if (volume.hasClass("active")) {
+      player.mute();
+      volume.removeClass("active");
+    } else {
+      player.unMute();
+      volume.addClass("active");
+    }
+  });
+
+  /*$("#volume").on("input", function () {
+    const v = this.value;
+    console.log(v);
+  });*/
 };
 
 const onPlayerStateChange = (event) => {
@@ -129,3 +127,5 @@ function onYouTubeIframeAPIReady() {
     },
   });
 }
+
+eventsInit();
