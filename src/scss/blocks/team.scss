@@ -1,0 +1,126 @@
+.team {
+    background: url('../img/bg_team.jpg') center center / cover no-repeat;
+    position: relative;
+}
+
+.team-block__right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    opacity: 0.92;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablets {
+        left: 0;
+    }
+}
+
+.team__desc {
+    position: absolute;
+    top: 20%;
+    @include tablets {
+        text-align: center;
+        padding: 0 15.9375rem;
+    }
+}
+
+.team__title {
+    margin-bottom: 2.875rem;
+}
+
+.team__item-info {
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-in;
+
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.team__item {
+    margin-bottom: 2.1875rem;
+    transition: 1.5s;
+    font-family: Ubuntu-Regular;
+    color: $white;
+    font-size: 0.8812rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }  
+
+    &--active {
+
+        .team__item-name {
+            color: $yellow;
+        }
+
+        .team__item-info {
+            max-height: 15.625rem;
+        }
+
+        .team__item-decor {
+            margin-top: 0.625rem;
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-bottom-color: $yellow;
+        }
+    }
+}
+
+.team__item-link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.team__item-name {
+    @include setFontStyleGagalin;
+    font-weight: 400;
+    font-size: 1.5625rem;
+    margin-bottom: 1.0625rem;
+    @include phones-xl {
+        font-size: 1.1875rem;
+    }
+}
+
+.team__item-decor {
+    margin: 0.9375rem 0.625rem 0;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: $yellow;
+}
+
+.team__item-img {
+    width: 6.25rem;
+    height: 6.3125rem;
+    margin-right: 1.3125rem;
+
+    @include tablets {
+        margin: 0 auto;
+    }
+}
+
+.team__item-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team__item-profession {
+    margin-bottom: 0.625rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.team__item-text p {
+    font-weight: 300;
+}

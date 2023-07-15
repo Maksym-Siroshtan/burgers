@@ -1,0 +1,16 @@
+.arrow-scroll-down {
+    position: absolute;
+    bottom: 2.1875rem;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.arrow-scroll-down__btn {
+    background: none;
+    padding: 0;
+}
+
+.arrow-scroll-down__icon {
+    width: 1.8125rem;
+    height: 0.875rem;
+}

@@ -1,0 +1,31 @@
+.contacts {
+    @include phones-xl {
+        text-align: center;
+        margin-bottom: 0.625rem;
+    }
+}
+
+.contacts p {
+    font-weight: 300;
+    color: $white;
+}
+
+.contacts__icon, .contacts__phone {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contacts__icon {
+    margin-right: 0.3125rem;
+}
+
+.contacts__icon-block {
+    width: 0.6875rem;
+    height: 0.6875rem;
+}
+
+.contacts__phone {
+    font-weight: 700;
+    color: $orange;
+    text-decoration: none;
+}
