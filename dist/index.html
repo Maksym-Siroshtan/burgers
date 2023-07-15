@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>burgers</title>
 
-    <link rel="stylesheet" href="css/style.min.css?_v=20220926191829">
+    <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 
@@ -206,7 +206,7 @@
                                     </div>
                                 </div>
                                 <div class="slider__image">
-                                    <picture><source srcset="img/burger_1.webp" type="image/webp"><img src="img/burger_1.png" alt="Dark BEEF Burger" class="slider__image-pic"></picture>
+                                    <img src="img/burger_1.png" alt="Dark BEEF Burger" class="slider__image-pic">
                                 </div>
                                 <div class="slider__calories">
                                     <svg class="slider__calories-pic">
@@ -299,7 +299,7 @@
                                     </div>
                                 </div>
                                 <div class="slider__image">
-                                    <picture><source srcset="img/burger_2.webp" type="image/webp"><img src="img/burger_2.png" alt="Burger sandwich" class="slider__image-pic"></picture>
+                                    <img src="img/burger_2.png" alt="Burger sandwich" class="slider__image-pic">
                                 </div>
                                 <div class="slider__calories">
                                     <svg class="slider__calories-pic">
@@ -392,7 +392,7 @@
                                     </div>
                                 </div>
                                 <div class="slider__image">
-                                    <picture><source srcset="img/burger_3.webp" type="image/webp"><img src="img/burger_3.png" alt="Chiken burger" class="slider__image-pic"></picture>
+                                    <img src="img/burger_3.png" alt="Chiken burger" class="slider__image-pic">
                                 </div>
                                 <div class="slider__calories">
                                     <svg class="slider__calories-pic">
@@ -485,7 +485,7 @@
                                     </div>
                                 </div>
                                 <div class="slider__image">
-                                    <picture><source srcset="img/burger_4.webp" type="image/webp"><img src="img/burger_4.png" alt="NYC Diner Bacon Cheeseburger" class="slider__image-pic"></picture>
+                                    <img src="img/burger_4.png" alt="NYC Diner Bacon Cheeseburger" class="slider__image-pic">
                                 </div>
                                 <div class="slider__calories">
                                     <svg class="slider__calories-pic">
@@ -578,7 +578,7 @@
                                     </div>
                                 </div>
                                 <div class="slider__image">
-                                    <picture><source srcset="img/burger_5.webp" type="image/webp"><img src="img/burger_5.png" alt="Spicy Shrimp Burger" class="slider__image-pic"></picture>
+                                    <img src="img/burger_5.png" alt="Spicy Shrimp Burger" class="slider__image-pic">
                                 </div>
                                 <div class="slider__calories">
                                     <svg class="slider__calories-pic">
@@ -898,26 +898,29 @@
                     </div>
                     <div class="player">
                         <div class="player__wrapper">
-                            <div id="myPlayer"></div>
-                            <div class="player__splash">
-                                <svg class="player__icon-play">
+                            <video id="video-player" width="640" height="360" src="files/video.mp4" poster="img/bg_player.png"></video>
+                                <svg class="player__poster-play">
                                     <use xlink:href="img/icons/icons.svg#play"></use>
                                 </svg>
+                            <div class="player__controls">
+                                <button class="player__start-pause player__icons--size"></button>
+                                <!--<div class="player__playback">
+                                    <button class="player__playback-button"></button>
+                                </div>-->
+                                <div class="player__playback">
+                                    <progress class="player__playback-button" id="progress" max="100" value="0" style="width: 100%;"></progress> 
+                                </div>
+                                <div class="player__volume-muted">
+                                    <div class="player__volume active player__icons--size"></div>
+                                    <input type="range" class="player__range" id="volume" min="0" max="100"></input>
+                                </div>
+                                <div class="player__duration">
+                                    <span class="player__duration-completed">0:00</span>
+                                    <span class="player__duration-estimate">0:00</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="player__controls">
-                            <button class="player__start player__icons--size"></button>
-                            <div class="player__playback">
-                                <button class="player__playback-button"></button>
-                            </div>
-                            <div class="player__volume active player__icons--size">
-                                <!--<input type ="range" id ="volume" min ="0" max ="100"></input>-->
-                            </div>
-                            <div class="player__duration">
-                                <span class="player__duration-completed">0:00</span>
-                                <span class="player__duration-estimate">0:00</span>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
@@ -1111,13 +1114,14 @@
     </div>
 
     
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20220926191829"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js?_v=20220926191829"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js?_v=20220926191829"></script>
-    <script src="https://www.youtube.com/iframe_api?_v=20220926191829"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=4849509d-134b-41d3-b5ae-62189be53f4f&lang=ru_RU&_v=20220926191829"></script>
-    <script src="files/player.js?_v=20220926191829"></script>
-    <script src="js/app.min.js?_v=20220926191829"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <!--<script src="https://www.youtube.com/iframe_api"></script>-->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=4849509d-134b-41d3-b5ae-62189be53f4f&lang=ru_RU"></script>
+    <script src="files/html5.js"></script>
+    <!--<script src="files/player.js"></script>-->
+    <script src="js/app.min.js"></script>
 </body>
 
 </html>
